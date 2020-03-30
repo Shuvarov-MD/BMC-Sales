@@ -1,0 +1,173 @@
+.popular {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  &__title {
+    color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "DIN Pro";
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 24px;
+    &::after {
+      content: url('../img/index/right-line.svg');
+      margin-left: 50px;
+    }
+    &::before {
+      content: url('../img/index/left-line.svg');
+      margin-right: 50px;
+    }
+  }
+  &__row {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    display: inline-block;
+    text-decoration: none;
+    color: #202020;
+    font-size: 14px;
+    font-family: "DIN Pro - Medium";
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    padding: 15px 35px;
+    margin: auto;
+    border: 2px solid #202020;
+    &-img {
+      height: 11px;
+      margin-left: 12px;
+    }
+  }
+}
+
+.card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  &__name {
+    color: #202020;
+    font-family: "DIN Pro";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    margin-left: 21px;
+  }
+  &__category {
+    display: block;
+    color: #919191;
+    font-family: "DIN Pro - Light";
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__stars {
+    margin-left: 21px;
+    margin-bottom: 30px;
+  }
+  &__footer {
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #d7d7d7;
+      margin-bottom: 30px;
+    }
+  }
+  &__price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__price {
+    color: #202020;
+    font-family: "DIN Pro";
+    font-size: 30px;
+    margin-left: 21px;
+    margin-right: 7px;
+    &--old {
+      margin-left: 21px;
+      margin-top: 18px;
+      display: block;
+      color: #919191;
+      font-size: 16px;
+    }
+    &--line-through {
+      line-height: 24px;
+      text-decoration: line-through;
+    }
+  }
+  &__currency {
+    font-size: 16px;
+    color: #202020;
+  }
+  &__add {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+    &-img {
+      width: 24px;
+      height: 24px;
+      path {
+        fill: #919191;
+      }
+      &--small {
+        position: absolute;
+        right: 20px;
+        top: 55px;
+        width: 20px;
+        height: 20px;
+        path {
+          fill: $light;
+        }
+      }
+    }
+  }
+  &__img-block {
+    position: relative;
+  }
+  &__block {
+    &--hidden {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(#000000, 0.6);
+    }
+  }
+  &__favorites-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    fill: $light;
+  }
+  &__flag {
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 71px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "DIN Pro";
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    z-index: 99;
+    background: url('../img/card/card-flag.png') no-repeat center;
+  }
+
+}
