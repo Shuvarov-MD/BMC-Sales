@@ -1,0 +1,94 @@
+.approved-form {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  &__title {
+    position: relative;
+    max-width: 720px;
+    display: flex;
+    padding: 40px 0;
+    border: 2px solid $dark;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #202020;
+    font-size: 24px;
+    font-family: "DIN Pro - Light";
+    font-weight: 300;
+    letter-spacing: 0.24px;
+    line-height: 30px;
+    &--bold {
+      font-family: "DIN Pro - Bold";
+      margin-right: 7px;
+    }
+    &::before {
+      position: absolute;
+      content: url('../img/index/form-left-line.svg');
+      top: 29%;
+      left: -45%;
+    }
+    &::after {
+      position: absolute;
+      content: url('../img/index/form-right-line.svg');
+      top: 29%;
+      right: -45%;
+    }
+  }
+  &__img {
+    width: 7px;
+    margin-left: 20px;
+    fill: $dark;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    max-width: 434px;
+    padding: 49px 51px 88px;
+    &:first-of-type {
+      background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center;
+    }
+    &:nth-of-type(2) {
+      background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center;
+    }
+    &:last-of-type {
+      background: #f6f6f6 url('../img/index/accessories-bg.jpg') no-repeat center;
+    }
+  }
+}
+
+.col {
+  &__text {
+    color: #919191;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    &--bold {
+      display: block;
+      color: #000000;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 16px 30px;
+    border: 2px solid #202020;
+    color: #202020;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: "DIN Pro - Medium";
+    letter-spacing: 0.14px;
+  }
+  &__img {
+    width: 6px;
+    margin-left: 10px;
+
+  }
+}

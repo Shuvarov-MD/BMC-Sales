@@ -351,6 +351,78 @@ html {
 body {
   font-family: 'DIN Pro', sans-serif; }
 
+.title__strong {
+  font-family: "DIN Pro - Bold";
+  letter-spacing: 0.36px; }
+
+.arrow-right {
+  height: 12px; }
+  .arrow-right path {
+    fill: #ffffff; }
+
+.button__arrow-right {
+  margin-left: 1.071rem;
+  padding-right: 2.142rem; }
+
+.swiper-button__img {
+  width: 1.142rem; }
+  .swiper-button__img path {
+    fill: #cccccc; }
+  .swiper-button__img--active path {
+    fill: #ffffff; }
+
+.slide__text {
+  margin: 0;
+  position: absolute;
+  right: 18.357rem;
+  bottom: 3.571rem;
+  max-width: 12.857rem;
+  color: #919191;
+  font-size: 1rem;
+  line-height: 1.285rem;
+  letter-spacing: 0.14px; }
+  .slide__text::before {
+    content: '';
+    display: block;
+    width: 2.142rem;
+    height: 1px;
+    margin-bottom: 1.428rem;
+    background-color: #ccc; }
+
+.slide__price-tag {
+  display: block;
+  margin-top: 1rem; }
+
+.slide__price {
+  color: #f47920;
+  font-size: 1.714rem;
+  letter-spacing: 0.24px; }
+
+.social--vertical {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 3.571rem;
+  z-index: 50; }
+
+.social__link--vertical:not(:last-of-type) {
+  margin-bottom: 1.428rem; }
+
+.social__img {
+  width: 1rem;
+  height: 1rem;
+  fill: #919191; }
+  .social__img path {
+    fill: #919191; }
+
 .header {
   position: relative;
   background-color: #f8f6f7; }
@@ -546,5 +618,191 @@ body {
     font-size: 1.142rem;
     line-height: 2.142rem;
     letter-spacing: 0.011rem; }
+
+.hero {
+  padding-top: 2.142rem;
+  background-color: #f8f6f7; }
+  .hero__swiper-container {
+    width: 100%;
+    height: 40.214rem; }
+  .hero__swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .hero__swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 0.357rem;
+    background: url("../img/index/hero/hero-slider-bg.png") no-repeat center; }
+  .hero__swiper-button-prev, .hero__swiper-button-next {
+    width: 3.214rem;
+    height: 3.214rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #cccccc;
+    left: 0;
+    bottom: 9.071rem;
+    top: auto; }
+    .hero__swiper-button-prev::after, .hero__swiper-button-next::after {
+      display: none; }
+    .hero__swiper-button-prev--active, .hero__swiper-button-next--active {
+      background-color: #202020;
+      border-color: #202020; }
+  .hero__swiper-button-next {
+    left: 3.928rem; }
+  .hero__title {
+    max-width: 29.357rem;
+    color: #202020;
+    font-size: 2.571rem;
+    line-height: 3.426rem;
+    text-transform: uppercase;
+    font-family: "DIN Pro - Light";
+    letter-spacing: 0.36px;
+    margin-bottom: 2.357rem; }
+    .hero__title::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 3.571rem;
+      margin-top: 3.928rem;
+      margin-bottom: 2.857rem;
+      background-color: #cccccc; }
+  .hero__button {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.142rem 0 1.142rem 2.142rem;
+    font-size: 1.285rem;
+    font-weight: 400;
+    line-height: 3.428rem;
+    background-color: #202020; }
+    .hero__button::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 3.571rem;
+      margin-top: 2.857rem;
+      background-color: #cccccc; }
+
+.approved-form {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .approved-form__title {
+    position: relative;
+    max-width: 720px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 0;
+    border: 2px solid #202020;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    color: #202020;
+    font-size: 24px;
+    font-family: "DIN Pro - Light";
+    font-weight: 300;
+    letter-spacing: 0.24px;
+    line-height: 30px; }
+    .approved-form__title--bold {
+      font-family: "DIN Pro - Bold";
+      margin-right: 7px; }
+    .approved-form__title::before {
+      position: absolute;
+      content: url("../img/index/form-left-line.svg");
+      top: 29%;
+      left: -45%; }
+    .approved-form__title::after {
+      position: absolute;
+      content: url("../img/index/form-right-line.svg");
+      top: 29%;
+      right: -45%; }
+  .approved-form__img {
+    width: 7px;
+    margin-left: 20px;
+    fill: #202020; }
+  .approved-form__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px; }
+  .approved-form__col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 30%;
+    max-width: 434px;
+    padding: 49px 51px 88px; }
+    .approved-form__col:first-of-type {
+      background: #f6f6f6 url("../img/index/boys-products-bg.jpg") no-repeat center; }
+    .approved-form__col:nth-of-type(2) {
+      background: #f6f6f6 url("../img/index/girls-products-bg.jpg") no-repeat center; }
+    .approved-form__col:last-of-type {
+      background: #f6f6f6 url("../img/index/accessories-bg.jpg") no-repeat center; }
+
+.col__text {
+  color: #919191;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right; }
+  .col__text--bold {
+    display: block;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 30px; }
+
+.col__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 30px;
+  border: 2px solid #202020;
+  color: #202020;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "DIN Pro - Medium";
+  letter-spacing: 0.14px; }
+
+.col__img {
+  width: 6px;
+  margin-left: 10px; }
 
 /*# sourceMappingURL=main.css.map */

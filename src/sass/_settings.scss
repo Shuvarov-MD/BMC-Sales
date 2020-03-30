@@ -9,3 +9,94 @@ html {
 body {
   font-family: 'DIN Pro', sans-serif;
 }
+
+
+.title {
+  &__strong {
+    font-family: "DIN Pro - Bold";
+    letter-spacing: 0.36px;
+  }
+}
+
+.arrow-right {
+  height: 12px;
+  path {
+    fill: $light;
+  }
+}
+
+.button {
+  &__arrow-right {
+    margin-left: 1.071rem;
+    padding-right: 2.142rem;
+  }
+}
+
+.swiper-button {
+  &__img {
+    width: 1.142rem;
+    path {
+      fill: #cccccc;
+    }
+    &--active {
+      path {
+        fill: $light;
+      }
+    }
+  }
+}
+
+.slide {
+  &__text {
+    margin: 0;
+    position: absolute;
+    right: 18.357rem;
+    bottom: 3.571rem;
+    max-width: 12.857rem;
+    color: #919191;
+    font-size: 1rem;
+    line-height: 1.285rem;
+    letter-spacing: 0.14px;
+    &::before {
+      content: '';
+      display: block;
+      width: 2.142rem;
+      height: 1px;
+      margin-bottom: 1.428rem;
+      background-color: #ccc;
+    }
+  }
+  &__price-tag {
+    display: block;
+    margin-top: 1rem;
+  }
+  &__price {
+    color: $primary;
+    font-size: 1.714rem;
+    letter-spacing: 0.24px;
+  }
+}
+
+.social {
+  &--vertical {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    bottom: 3.571rem;
+    z-index: 50;
+  }
+  &__link {
+    &--vertical:not(:last-of-type) {
+      margin-bottom: 1.428rem;
+    }
+  }
+  &__img {
+    width: 1rem;
+    height: 1rem;
+    fill: #919191;
+    path {
+      fill: #919191;
+    }
+  }
+}
