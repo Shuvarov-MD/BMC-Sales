@@ -26,12 +26,12 @@ function localServer() {
     }
   });
   watch('src/**/*.html').on('change', browserSync.reload);
-  watch('src/sass/**/*.{sass.scss}', compileSass);
+  watch('src/sass/**/*.{sass,scss}', compileSass);
   watch('src/js/**/*.js').on('change', browserSync.reload);
 }
 
-function compileSass(cb) {
-  src('src/sass/**/*.{sass,scss}')
+function compileSass() {
+  return src('src/sass/**/*.{sass,scss}')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
@@ -41,7 +41,7 @@ function compileSass(cb) {
   .pipe(sourcemaps.write('.'))
   .pipe(dest('src/css'))
   .pipe(browserSync.stream());
-  cb();
+ // cb();
 }
 
 function minCSS(cb) {
