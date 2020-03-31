@@ -1,0 +1,121 @@
+.footer {
+  &-main {
+    box-shadow: inset 0 1px 0 rgba(87, 87, 87, 0.05);
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__col {
+    width: 20%;
+    max-width: 275px;
+    &:first-of-type {
+      margin-right: 75px;
+    }
+    &:nth-of-type(2) {
+      margin-right: 100px;
+    }
+    &:last-of-type {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+  &__subtitle {
+    color: #202020;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+  &__bold {
+    font-family: "DIN Pro - Bold";
+    letter-spacing: 0.18px;
+  }
+  &__text {
+    color: #202020;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    margin-bottom: 38px;
+  }
+  &__button {
+    margin-top: 30px;
+    color: #202020;
+    font-size: 14px;
+    font-family: "DIN Pro - Medium";
+    letter-spacing: 0.14px;
+    background-color: transparent;
+    border: 2px solid #202020;
+    padding: 16px 33px;
+    &-img {
+      height: 11px;
+    }
+  }
+  &__menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    &-link {
+      color: #919191;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 34px;
+      text-transform: uppercase;
+      letter-spacing: 0.12px;
+    }
+  }
+  &__logo {
+    justify-content: flex-end;
+  }
+  &__phone {
+    margin-top: 30px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    display: block;
+    color: #202020;
+    font-family: "DIN Pro";
+    font-size: 24px;
+    letter-spacing: 0.24px;
+  }
+  &__email {
+    color: #919191;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    margin-bottom: 80px;
+  }
+  &-copyright {
+    background-color: #202020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__send-error {
+    color: #919191;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
+
+.download {
+  &-link {
+    display: inline-block;
+  }
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 14px;
+}

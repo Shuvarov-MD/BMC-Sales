@@ -78,6 +78,9 @@ body {
 }
 
 .social {
+  &--horizontal {
+    display: flex;
+  }
   &--vertical {
     display: flex;
     flex-direction: column;
@@ -89,6 +92,9 @@ body {
   &__link {
     &--vertical:not(:last-of-type) {
       margin-bottom: 1.428rem;
+    }
+    &--horizontal:not(:last-of-type) {
+      margin-right: 1rem;
     }
   }
   &__img {
