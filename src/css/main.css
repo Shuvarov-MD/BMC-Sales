@@ -855,6 +855,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .categories__col {
+    position: relative;
     padding: 22px 0;
     max-width: 318px;
     text-align: center;
@@ -865,12 +866,19 @@ body {
     border-radius: 5px;
     background-color: #f6f6f6;
     color: #202020;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px; }
+    font-size: 16px; }
     .categories__col--active {
       background-color: #f47920;
       color: #ffffff; }
+      .categories__col--active .categories__col-img path {
+        fill: #ffffff; }
+    .categories__col-img {
+      width: 20px;
+      position: absolute;
+      top: 20px;
+      left: 20px; }
+      .categories__col-img path {
+        fill: #919191; }
   .categories__button {
     color: #202020;
     font-size: 14px;

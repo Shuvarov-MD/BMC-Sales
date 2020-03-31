@@ -26,6 +26,7 @@
     justify-content: space-between;
   }
   &__col {
+    position: relative;
     padding: 22px 0;
     max-width: 318px;
     text-align: center;
@@ -36,11 +37,23 @@
     background-color: #f6f6f6;
     color: $dark;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
     &--active {
       background-color: $primary;
       color: $light;
+      .categories__col-img {
+        path {
+          fill: $light;
+        }
+      }
+    }
+    &-img {
+      width: 20px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      path {
+        fill: #919191;
+      }
     }
   }
   &__button {
