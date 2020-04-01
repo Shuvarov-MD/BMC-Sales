@@ -16,4 +16,30 @@ $(document).ready(function () {
       prevEl: '.services__swiper-button-prev',
     },
   });
+
+  var recommendedSwiper = new Swiper('.recommended__swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    freeMode: true,
+    navigation: {
+      nextEl: '.recommended__swiper-button-next',
+      prevEl: '.recommended__swiper-button-prev',
+    },
+  });
+
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    loopedSlides: 5, //looped slides should be the same
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
 });
