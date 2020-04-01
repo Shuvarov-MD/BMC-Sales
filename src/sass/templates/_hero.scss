@@ -61,17 +61,21 @@
   &__button {
     text-decoration: none;
     color: $light;
+    display: block;
+    max-width: 12.142rem;
     padding: 1.142rem 0 1.142rem 2.142rem;
+    border: 2px solid $dark;
     font-size: 1.285rem;
-    font-weight: 400;
-    line-height: 3.428rem;
     background-color: $dark;
+    position: relative;
     &::after {
+      position: absolute;
+      left: 0;
       content: '';
       display: block;
       height: 1px;
       width: 3.571rem;
-      margin-top: 2.857rem;
+      margin-top: 4rem;
       background-color: #cccccc;
     }
   }

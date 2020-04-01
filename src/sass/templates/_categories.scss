@@ -37,15 +37,6 @@
     background-color: #f6f6f6;
     color: $dark;
     font-size: 16px;
-    &--active {
-      background-color: $primary;
-      color: $light;
-      .categories__col-img {
-        path {
-          fill: $light;
-        }
-      }
-    }
     &-img {
       width: 20px;
       position: absolute;

@@ -10,6 +10,12 @@ body {
   font-family: 'DIN Pro', sans-serif;
 }
 
+a, button {
+  &:focus {
+    outline: none;
+  }
+}
+
 
 
 .title {
@@ -29,7 +35,9 @@ body {
 .button {
   &__arrow-right {
     margin-left: 1.071rem;
-    padding-right: 2.142rem;
+    path {
+      transition: all 0.3s linear;
+    }
   }
 }
 

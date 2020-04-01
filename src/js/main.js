@@ -42,4 +42,8 @@ $(document).ready(function () {
       swiper: galleryThumbs,
     },
   });
+
+  new WOW().init();
+
+  
 });
