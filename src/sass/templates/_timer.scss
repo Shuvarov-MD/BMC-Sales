@@ -1,43 +1,46 @@
 .timer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.571rem;
+  padding-bottom: 3.571rem;
   text-align: center;
+
   &__title {
-    color: #202020;
+    color: $dark;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    font-family: "DIN Pro";
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 24px;
+    font-size: 2.571rem;
+
     &::after {
       content: url('../img/index/right-line.svg');
-      margin-left: 55px;
+      margin-left: 3.928rem;
     }
+
     &::before {
       content: url('../img/index/left-line.svg');
-      margin-right: 55px;
+      margin-right: 3.928rem;
     }
   }
+
   &__row {
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 2.857rem;
+    margin-bottom: 4.285rem;
     display: flex;
     justify-content: space-around;
   }
+
   &__text {
     display: block;
-    color: #202020;
-    font-size: 30px;
+    color: $dark;
+    font-size: 2.142rem;
     font-family: "DIN Pro - Light";
   }
+
   &__value {
     display: block;
-    color: #f47920;
+    color: $primary;
     font-family: "DIN Pro - Bold";
-    font-size: 72px;
+    font-size: 5.142rem;
   }
 
 }
@@ -46,8 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height: 210px;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   border: 2px dashed #d7d7d7;
 }
@@ -57,9 +60,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 198px;
-  height: 198px;
+  width: 14.142rem;
+  height: 14.142rem;
   border-radius: 50%;
-  border: 5px solid #f47920;
+  border: 0.357rem solid #f47920;
   background-color: #f6f6f6;
 }

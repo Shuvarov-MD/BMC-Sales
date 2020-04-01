@@ -1,31 +1,33 @@
 .approved-form {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 2.142rem;
+  padding-bottom: 3.571rem;
+
   &__title {
     position: relative;
-    max-width: 720px;
+    max-width: 51.428rem;
     display: flex;
-    padding: 40px 0;
+    padding: 2.857rem 0;
     border: 2px solid $dark;
     align-items: center;
     justify-content: center;
     margin: auto;
-    color: #202020;
-    font-size: 24px;
+    color: $dark;
+    font-size: 1.714rem;
     font-family: "DIN Pro - Light";
-    font-weight: 300;
     letter-spacing: 0.24px;
-    line-height: 30px;
+
     &--bold {
       font-family: "DIN Pro - Bold";
-      margin-right: 7px;
+      margin-right: 0.5rem;
     }
+
     &::before {
       position: absolute;
       content: url('../img/index/form-left-line.svg');
       top: 29%;
       left: -45%;
     }
+
     &::after {
       position: absolute;
       content: url('../img/index/form-right-line.svg');
@@ -33,29 +35,35 @@
       right: -45%;
     }
   }
+
   &__img {
-    width: 7px;
-    margin-left: 20px;
+    width: 0.5rem;
+    margin-left: 1.428rem;
     fill: $dark;
   }
+
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 2.142rem;
   }
+
   &__col {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 30%;
-    max-width: 434px;
-    padding: 49px 51px 74px;
+    max-width: 31rem;
+    padding: 3.5rem 3.642rem 5.285rem;
+
     &:first-of-type {
       background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center;
     }
+
     &:nth-of-type(2) {
       background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center;
     }
+
     &:last-of-type {
       background: #f6f6f6 url('../img/index/accessories-bg.jpg') no-repeat center;
     }
@@ -65,32 +73,32 @@
 .col {
   &__text {
     margin: 0;
-    color: #919191;
-    font-size: 14px;
-    line-height: 24px;
+    color: $secondary;
+    line-height: 1.714rem;
     text-align: right;
+
     &--bold {
       display: block;
       color: #000000;
-      font-size: 24px;
-      margin-bottom: 30px;
+      font-size: 1.714rem;
+      margin-bottom: 2.142rem;
     }
   }
+
   &__button {
     display: flex;
     text-decoration: none;
     align-items: center;
-    padding: 16px 30px;
+    padding: 1.142rem 2.142rem;
     border: 2px solid #202020;
     color: #202020;
     background-color: transparent;
-    font-size: 14px;
     font-family: "DIN Pro - Medium";
     letter-spacing: 0.14px;
   }
-  &__img {
-    width: 6px;
-    margin-left: 10px;
 
+  &__img {
+    width: 0.428rem;
+    margin-left: 0.714rem;
   }
 }

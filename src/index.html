@@ -198,13 +198,21 @@
               <!-- /.link -->
             </li>
             <!-- /.item -->
-            <li class="item item--main">
+            <li class="item item--main item__catalog">
               <a href="catalog.html" class="link item__link--main">Каталоги
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a href="catalog.html" class="submenu__link">Одежда</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="catalog.html" class="submenu__link">Обувь</a>
+                </li>
+              </ul>
               <!-- /.link -->
             </li>
             <!-- /.item -->
@@ -962,32 +970,33 @@
     <section class="section timer">
       <div class="container wow fadeInLeft">
         <h2 class="title timer__title">До конца скидок осталось</h2>
-        <div class="row timer__row">
+        <div class="row timer__row" id="countdown">
+
           <div class="outer-wrap">
             <div class="inner-wrap">
-              <span class="timer__text">Дней</span>
-              <span class="timer__value">01</span>
+              <span class="timer__text ">Дней</span>
+              <span class="timer__value days countdown-time"></span>
             </div>
           </div>
           <img data-src="img/index/cross.svg" class="lazyload" src="#" alt="Разделитель">
           <div class="outer-wrap">
             <div class="inner-wrap">
               <span class="timer__text">Часов</span>
-              <span class="timer__value">06</span>
+              <span class="timer__value hours countdown-time"></span>
             </div>
           </div>
           <img data-src="img/index/cross.svg" class="lazyload" src="#" alt="Разделитель">
           <div class="outer-wrap">
             <div class="inner-wrap">
               <span class="timer__text">Минут</span>
-              <span class="timer__value">38</span>
+              <span class="timer__value minutes countdown-time"></span>
             </div>
           </div>
           <img data-src="img/index/cross.svg" class="lazyload" src="#" alt="Разделитель">
           <div class="outer-wrap">
             <div class="inner-wrap">
               <span class="timer__text">Секунд</span>
-              <span class="timer__value">45</span>
+              <span class="timer__value seconds countdown-time"></span>
             </div>
           </div>
         </div>
@@ -997,7 +1006,7 @@
 
 
 
-    <section class="section sales ">
+    <section class="section sales">
       <div class="container wow fadeInUp">
         <h2 class="title sales__title">Товары со скидкой</h2>
         <div class="row sales__row">

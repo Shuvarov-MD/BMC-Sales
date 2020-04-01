@@ -13,7 +13,6 @@
 
         path {
           fill: #202020;
-          ;
         }
       }
 
@@ -60,6 +59,7 @@
       &:hover {
         background-color: transparent;
         color: $dark;
+
         .button__arrow-right {
           path {
             fill: $dark;
@@ -73,7 +73,8 @@
     &__link {
       path {
         transition: all 0.3s linear;
-    }
+      }
+
       &:hover {
         path {
           fill: $dark;
@@ -87,10 +88,13 @@
       path {
         transition: all 0.3s linear;
       }
+
       transition: all 0.3s linear;
+
       &:hover {
         color: $light;
         background-color: $dark;
+
         path {
           fill: $light;
         }
@@ -101,26 +105,33 @@
   .categories {
     &__col {
       transition: all 0.3s linear;
+
       path {
         transition: all 0.3s linear;
       }
+
       &:hover {
         color: $light;
         background-color: $primary;
+
         path {
           fill: $light;
         }
       }
     }
+
     &__button {
       transition: all 0.3s linear;
+
       path {
         transition: all 0.3s linear;
       }
+
       &:hover {
         cursor: pointer;
         color: $light;
         background-color: $dark;
+
         path {
           fill: $light;
         }
@@ -132,9 +143,11 @@
 
   .card {
     transition: all 0.3s linear;
+
     &:hover {
-      box-shadow: 1px 1px 3px $dark;
+      box-shadow: 1px 1px 3px #919191;
     }
+
     &__img-block {
       &:hover {
         .card__block--hidden {
@@ -142,20 +155,25 @@
         }
       }
     }
+
     &__favorites-img {
       path {
         transition: all 0.3s linear;
       }
+
       &:hover {
         path {
           fill: $primary;
         }
       }
     }
-    &__add-img,  &__add-img--small {
+
+    &__add-img,
+    &__add-img--small {
       path {
         transition: all 0.3s linear;
       }
+
       &:hover {
         path {
           fill: $primary;
@@ -163,18 +181,22 @@
       }
     }
   }
+
   .popular {
     &__button {
       transition: all 0.3s linear;
     }
+
     path {
       transition: all 0.3s linear;
     }
+
     &__button {
       &:hover {
         cursor: pointer;
         background-color: $dark;
         color: $light;
+
         path {
           fill: $light;
         }
@@ -184,14 +206,17 @@
   }
 
   .mobile-app__button {
-      transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
     path {
       transition: all 0.3s linear;
     }
+
     &:hover {
       cursor: pointer;
       background-color: $light;
       color: $primary;
+
       path {
         fill: $primary;
       }
@@ -200,45 +225,57 @@
 
   .services__slide {
     transition: all 0.3s linear;
+
     &:hover {
-      box-shadow: 1px 1px 3px $dark
+      box-shadow: 1px 1px 3px #919191;
     }
   }
 
   .footer__button {
     transition: all 0.3s linear;
+
     path {
       transition: all 0.3s linear;
     }
+
     &:hover {
       cursor: pointer;
       background-color: $dark;
       color: $light;
+
       path {
         fill: $light;
       }
     }
   }
+
   .footer__item-link {
     transition: all 0.3s linear;
+
     &:hover {
       color: $dark;
     }
   }
+
   .footer__phone {
     transition: all 0.3s linear;
+
     &:hover {
       color: #919191;
     }
   }
+
   .footer__email {
     transition: all 0.3s linear;
+
     &:hover {
       color: $dark;
     }
   }
+
   .footer__send-error {
     transition: all 0.3s linear;
+
     &:hover {
       color: $light;
     }
@@ -252,13 +289,16 @@
 
   .catalog-col__button {
     transition: all 0.3s linear;
+
     path {
       transition: all 0.3s linear;
     }
+
     &:hover {
       cursor: pointer;
       color: $light;
       background-color: $primary;
+
       path {
         fill: $light;
       }
@@ -267,24 +307,29 @@
 
   .catalog__menu-link {
     transition: all 0.3s linear;
+
     &:not(.catalog__menu-link--active):hover {
       text-decoration: underline;
       color: $primary;
     }
   }
+
   .paginations__item {
     transition: all 0.3s linear;
+
     &:not(.paginations__item--active):hover {
       color: $primary;
       border-color: $primary;
     }
   }
+
   .paginations__next {
     transition: all 0.3s linear;
+
     &:hover {
       cursor: pointer;
-      background-color: lighten($primary,10%);
-      border-color: lighten($primary,10%);
+      background-color: lighten($primary, 10%);
+      border-color: lighten($primary, 10%);
     }
   }
 
@@ -292,36 +337,56 @@
     border-color: $primary;
   }
 
-  .label__pickup-point, .label__color, .label__delivery, .product__slide--thumbs, .label__tab {
+  .label__pickup-point,
+  .label__color,
+  .label__delivery,
+  .product__slide--thumbs,
+  .label__tab {
     cursor: pointer;
   }
 
-.product__button {
-  transition: all 0.3s linear;
+  .product__button {
+    transition: all 0.3s linear;
     cursor: pointer;
+
     path {
       transition: all 0.3s linear;
     }
-  &--add {
-    &:hover {
-      background-color: transparent;
-      color: $primary;
-      path {
-        fill: $primary;
+
+    &--add {
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+
+        path {
+          fill: $primary;
+        }
       }
     }
-  }
-  &--favorites, &--wholesale {
-    &:hover {
-      background-color: $dark;
-      color: $light;
-      path {
-        fill: $light;
+
+    &--favorites,
+    &--wholesale {
+      &:hover {
+        background-color: $dark;
+        color: $light;
+
+        path {
+          fill: $light;
+        }
       }
     }
   }
 
-}
+  .submenu__link {
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $primary;
+      border-color: $primary
+    }
+  }
+
+
 
 
 }

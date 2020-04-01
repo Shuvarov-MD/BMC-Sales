@@ -1,15 +1,18 @@
 .hero {
   padding-top: 2.142rem;
   background-color: $accent;
+
   &__swiper-container {
     width: 100%;
     height: 40.214rem;
   }
+
   &__swiper-wrapper {
     width: 100%;
     height: 100%;
     position: relative;
   }
+
   &__swiper-slide {
     position: relative;
     width: 100%;
@@ -17,7 +20,9 @@
     padding-left: 0.357rem;
     background: url('../img/index/hero/hero-slider-bg.png') no-repeat center;
   }
-  &__swiper-button-prev, &__swiper-button-next {
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
     width: 3.214rem;
     height: 3.214rem;
     display: flex;
@@ -28,17 +33,21 @@
     left: 0;
     bottom: 9.071rem;
     top: auto;
+
     &::after {
       display: none;
     }
+
     &--active {
       background-color: $dark;
       border-color: $dark;
     }
   }
+
   &__swiper-button-next {
     left: 3.928rem;
   }
+
   &__title {
     max-width: 29.357rem;
     color: $dark;
@@ -48,6 +57,7 @@
     font-family: "DIN Pro - Light";
     letter-spacing: 0.36px;
     margin-bottom: 2.357rem;
+
     &::before {
       content: '';
       display: block;
@@ -58,6 +68,7 @@
       background-color: #cccccc;
     }
   }
+
   &__button {
     text-decoration: none;
     color: $light;
@@ -68,6 +79,7 @@
     font-size: 1.285rem;
     background-color: $dark;
     position: relative;
+
     &::after {
       position: absolute;
       left: 0;

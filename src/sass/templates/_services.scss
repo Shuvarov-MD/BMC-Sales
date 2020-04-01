@@ -1,45 +1,50 @@
 .services {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 7.142rem;
+  padding-bottom: 7.142rem;
+
   &__title {
-    color: #202020;
+    color: $dark;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "DIN Pro";
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 24px;
+    font-size: 2.571rem;
+
     &::after {
       content: url('../img/index/right-line.svg');
-      margin-left: 30px;
+      margin-left: 2.142rem;
     }
+
     &::before {
       content: url('../img/index/left-line.svg');
-      margin-right: 30px;
+      margin-right: 2.142rem;
     }
   }
+
   &__slide {
     display: block;
     text-decoration: none;
-    padding-bottom: 20px;
+    padding-bottom: 1.428rem;
   }
+
   &__text {
-    color: #202020;
-    font-size: 18px;
+    color: $dark;
+    font-size: 1.285rem;
   }
+
   &__link {
     display: block;
-    color: #919191;
+    color: $secondary;
     font-family: "DIN Pro - Light";
-    font-size: 14px;
   }
+
   &__swiper-container {
     position: relative;
-    padding-bottom: 105px;
+    padding-bottom: 7.5rem;
   }
-  &__swiper-button-prev, &__swiper-button-next {
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
     width: 3.214rem;
     height: 3.214rem;
     display: flex;
@@ -49,17 +54,21 @@
     border: 1px solid #cccccc;
     bottom: 0;
     top: auto;
+
     &::after {
       display: none;
     }
+
     &--active {
       background-color: $dark;
       border-color: $dark;
     }
   }
+
   &__swiper-button-prev {
     left: 46.3%;
   }
+
   &__swiper-button-next {
     right: 46.3%;
   }

@@ -1,46 +1,47 @@
 .popular {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.571rem;
+  padding-bottom: 3.571rem;
   text-align: center;
+
   &__title {
-    color: #202020;
+    color: $dark;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "DIN Pro";
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 24px;
+    font-size: 2.571rem;
+
     &::after {
       content: url('../img/index/right-line.svg');
-      margin-left: 50px;
+      margin-left: 3.571rem;
     }
+
     &::before {
       content: url('../img/index/left-line.svg');
-      margin-right: 50px;
+      margin-right: 3.571rem;
     }
   }
+
   &__row {
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 2.857rem;
+    margin-bottom: 4.285rem;
     display: flex;
     justify-content: space-between;
   }
+
   &__button {
     display: inline-block;
     text-decoration: none;
-    color: #202020;
-    font-size: 14px;
+    color: $dark;
     font-family: "DIN Pro - Medium";
-    font-weight: 500;
     letter-spacing: 0.14px;
-    padding: 15px 35px;
+    padding: 1.071rem 2.5rem;
     margin: auto;
     border: 2px solid #202020;
+
     &-img {
-      height: 11px;
-      margin-left: 12px;
+      height: 0.785rem;
+      margin-left: 0.857rem;
     }
   }
 }
@@ -50,28 +51,29 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 1.428rem;
+
   &__name {
-    color: #202020;
-    font-family: "DIN Pro";
-    font-size: 18px;
+    color: $dark;
+    font-size: 1.285rem;
     font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 18px;
-    margin-top: 30px;
-    margin-left: 21px;
+    line-height: 1.714rem;
+    margin-bottom: 1.285rem;
+    margin-top: 2.142rem;
+    margin-left: 1.235rem;
   }
+
   &__category {
     display: block;
-    color: #919191;
+    color: $secondary;
     font-family: "DIN Pro - Light";
-    font-size: 14px;
-    font-weight: 300;
   }
+
   &__stars {
-    margin-left: 21px;
-    margin-bottom: 30px;
+    margin-left: 1.5rem;
+    margin-bottom: 2.142rem;
   }
+
   &__footer {
     &::before {
       content: '';
@@ -79,65 +81,77 @@
       height: 1px;
       width: 100%;
       background-color: #d7d7d7;
-      margin-bottom: 30px;
+      margin-bottom: 2.142rem;
     }
   }
+
   &__price-tag {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
+
   &__price {
-    color: #202020;
-    font-family: "DIN Pro";
-    font-size: 30px;
-    margin-left: 21px;
-    margin-right: 7px;
+    color: $dark;
+    font-size: 2.142rem;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+
     &--old {
-      margin-left: 21px;
-      margin-top: 18px;
+      margin-left: 1.5rem;
+      margin-top: 1.285rem;
       display: block;
-      color: #919191;
-      font-size: 16px;
+      color: $secondary;
+      font-size: 1.142rem;
     }
+
     &--line-through {
-      line-height: 24px;
+      line-height: 1.714rem;
       text-decoration: line-through;
     }
   }
+
   &__currency {
-    font-size: 16px;
-    color: #202020;
+    font-size: 1.142rem;
+    color: $dark;
   }
+
   &__add {
     margin-left: auto;
     border: none;
     background-color: transparent;
-    margin-right: 20px;
+    margin-right: 1.428rem;
+
     &-img {
-      width: 24px;
-      height: 24px;
+      width: 1.714rem;
+      height: 1.714rem;
+
       path {
-        fill: #919191;
+        fill: $secondary;
       }
+
       &--small {
         position: absolute;
-        right: 20px;
-        top: 55px;
-        width: 20px;
-        height: 20px;
+        right: 1.428rem;
+        top: 3.928rem;
+        width: 1.428rem;
+        height: 1.428rem;
+
         path {
           fill: $light;
         }
       }
     }
   }
+
   &__img-block {
     position: relative;
+
     img {
       width: 100%;
     }
   }
+
   &__block {
     &--hidden {
       display: none;
@@ -150,26 +164,27 @@
       transition: all 0.3s linear;
     }
   }
+
   &__favorites-img {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 20px;
+    top: 1.428rem;
+    right: 1.428rem;
+    width: 1.428rem;
     fill: $light;
   }
+
   &__flag {
     position: absolute;
-    top: 15px;
-    left: -10px;
+    top: 1.071rem;
+    left: -0.714rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 71px;
-    height: 50px;
-    color: #ffffff;
-    font-family: "DIN Pro";
-    font-size: 30px;
-    line-height: 24px;
+    width: 5.071rem;
+    height: 3.571rem;
+    color: $light;
+    font-size: 2.142rem;
+    line-height: 1.714rem;
     letter-spacing: -0.3px;
     z-index: 99;
     background: url('../img/card/card-flag.png') no-repeat center;
