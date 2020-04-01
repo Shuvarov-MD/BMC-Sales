@@ -43,6 +43,42 @@ $(document).ready(function () {
     },
   });
 
+
+  //Добавление классов
+  $(".catalog__menu-link").click(function(e) {
+    e.preventDefault();
+    $(".catalog__menu-link").removeClass('catalog__menu-link--active');
+    $(this).addClass('catalog__menu-link--active');
+  });
+
+  $(".catalog-col__button").click(function(e) {
+    e.preventDefault();
+    $(".catalog-col__button").removeClass('catalog-col__button--active');
+    $(this).addClass('catalog-col__button--active');
+  });
+
+  $(".paginations__item").click(function(e) {
+    e.preventDefault();
+    $(".paginations__item").removeClass('paginations__item--active');
+    $(this).addClass('paginations__item--active');
+  });
+
+
+  //Кнопка вперед
+  $('.paginations__next').on('click', function () {
+		if ($('.paginations__item--active').index() == -1) {
+			$('.paginations__item:first-child').addClass('paginations__item--active');
+		} else {
+
+			$('.paginations__item--active').next('.paginations__item').addClass('paginations__item--active');
+			$('.paginations__item--active').prev('.paginations__item').removeClass('paginations__item--active');
+		}
+
+	});
+
+
+
+
   new WOW().init();
 
 
@@ -86,7 +122,7 @@ $(document).ready(function () {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); 
+  var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
   initializeClock('countdown', deadline);
 
 

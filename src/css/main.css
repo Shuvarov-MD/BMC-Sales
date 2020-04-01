@@ -856,23 +856,20 @@ a:focus, button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    font-family: "DIN Pro";
     font-size: 2.571rem; }
     .categories__title::after {
-      content: url("../img/index/right-line.svg");
-      margin-left: 4.285rem; }
+      content: url("../img/index/right-line.svg"); }
     .categories__title::before {
-      content: url("../img/index/left-line.svg");
-      margin-right: 4.285rem; }
+      content: url("../img/index/left-line.svg"); }
   .categories__row {
     margin-top: 2.857rem;
     display: -webkit-box;
@@ -934,10 +931,10 @@ a:focus, button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -945,11 +942,9 @@ a:focus, button:focus {
     text-align: center;
     font-size: 2.571rem; }
     .popular__title::after {
-      content: url("../img/index/right-line.svg");
-      margin-left: 3.571rem; }
+      content: url("../img/index/right-line.svg"); }
     .popular__title::before {
-      content: url("../img/index/left-line.svg");
-      margin-right: 3.571rem; }
+      content: url("../img/index/left-line.svg"); }
   .popular__row {
     margin-top: 2.857rem;
     margin-bottom: 4.285rem;
@@ -1058,7 +1053,8 @@ a:focus, button:focus {
         .card__add-img--small path {
           fill: #ffffff; }
   .card__img-block {
-    position: relative; }
+    position: relative;
+    max-height: 22.857rem; }
     .card__img-block img {
       width: 100%; }
   .card__block--hidden {
@@ -1124,11 +1120,9 @@ a:focus, button:focus {
     text-align: center;
     font-size: 2.571rem; }
     .timer__title::after {
-      content: url("../img/index/right-line.svg");
-      margin-left: 3.928rem; }
+      content: url("../img/index/right-line-small.svg"); }
     .timer__title::before {
-      content: url("../img/index/left-line.svg");
-      margin-right: 3.928rem; }
+      content: url("../img/index/left-line-small.svg"); }
   .timer__row {
     margin-top: 2.857rem;
     margin-bottom: 4.285rem;
@@ -1202,10 +1196,10 @@ a:focus, button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1213,11 +1207,9 @@ a:focus, button:focus {
     text-align: center;
     font-size: 2.571rem; }
     .sales__title::after {
-      content: url("../img/index/right-line.svg");
-      margin-left: 3.571rem; }
+      content: url("../img/index/right-line.svg"); }
     .sales__title::before {
-      content: url("../img/index/left-line.svg");
-      margin-right: 3.571rem; }
+      content: url("../img/index/left-line.svg"); }
   .sales__row {
     margin-top: 2.857rem;
     margin-bottom: 4.285rem;
@@ -1270,10 +1262,10 @@ a:focus, button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1281,11 +1273,9 @@ a:focus, button:focus {
     text-align: center;
     font-size: 2.571rem; }
     .services__title::after {
-      content: url("../img/index/right-line.svg");
-      margin-left: 2.142rem; }
+      content: url("../img/index/right-line.svg"); }
     .services__title::before {
-      content: url("../img/index/left-line.svg");
-      margin-right: 2.142rem; }
+      content: url("../img/index/left-line.svg"); }
   .services__slide {
     display: block;
     text-decoration: none;
@@ -1818,10 +1808,10 @@ a:focus, button:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1829,11 +1819,9 @@ a:focus, button:focus {
   text-align: center;
   font-size: 2.571rem; }
   .recommended__title::after {
-    content: url("../img/index/right-line.svg");
-    margin-left: 2.142rem; }
+    content: url("../img/product/right-line-small.svg"); }
   .recommended__title::before {
-    content: url("../img/index/left-line.svg");
-    margin-right: 2.142rem; }
+    content: url("../img/product/left-line-small.svg"); }
 
 .recommended__slide {
   display: block;
@@ -2262,6 +2250,12 @@ a:focus, button:focus {
   color: #ffffff; }
 
 @media screen and (min-width: 993px) {
+  .logo__title {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .logo__title:hover {
+    color: #919191; }
   .item__link {
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -2370,8 +2364,10 @@ a:focus, button:focus {
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-    .card__add-img:hover path, .card__add-img--small:hover path {
+    .card__add-img--small:hover path {
       fill: #f47920; }
+    .card__add-img:hover path {
+      fill: #202020; }
   .popular__button {
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -2516,6 +2512,12 @@ a:focus, button:focus {
     transition: all 0.3s linear; }
     .submenu__link:hover {
       color: #f47920;
-      border-color: #f47920; } }
+      border-color: #f47920; }
+  .breadcrumb__link {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .breadcrumb__link:hover {
+      color: #919191; } }
 
 /*# sourceMappingURL=main.css.map */

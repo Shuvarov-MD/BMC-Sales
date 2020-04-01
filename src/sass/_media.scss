@@ -1,4 +1,12 @@
 @media screen and (min-width: 993px) {
+  .logo {
+    &__title {
+      transition: all 0.3s linear;
+    }
+    &__title:hover {
+      color: #919191;
+    }
+  }
 
   .item {
     &__link {
@@ -173,11 +181,15 @@
       path {
         transition: all 0.3s linear;
       }
-
-      &:hover {
-        path {
-          fill: $primary;
-        }
+    }
+    &__add-img--small:hover {
+      path {
+        fill: $primary;
+      }
+    }
+    &__add-img:hover {
+      path {
+        fill: $dark;
       }
     }
   }
@@ -386,6 +398,12 @@
     }
   }
 
+  .breadcrumb__link {
+    transition: all 0.3s linear;
+    &:hover {
+      color: #919191;
+    }
+  }
 
 
 

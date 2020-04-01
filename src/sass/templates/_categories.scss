@@ -5,20 +5,17 @@
   &__title {
     color: $dark;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    font-family: "DIN Pro";
     font-size: 2.571rem;
 
     &::after {
       content: url('../img/index/right-line.svg');
-      margin-left: 4.285rem;
     }
 
     &::before {
       content: url('../img/index/left-line.svg');
-      margin-right: 4.285rem;
     }
   }
 
