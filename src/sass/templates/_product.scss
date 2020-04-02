@@ -9,17 +9,17 @@
 
   &__row {
     margin-top: 4.285rem;
-    margin-bottom: 96px;
+    margin-bottom: 6.857rem;
     display: flex;
     justify-content: space-between;
     &:last-of-type {
-      margin-bottom: 50px;
+      margin-bottom: 3.571rem;
     }
   }
 
   &__stars {
     img {
-      height: 17px;
+      height: 1.214rem;
     }
   }
 
@@ -32,9 +32,9 @@
     &--right {
       width: 59%;
       max-width: 55.928rem;
-      margin-top: -4px;
+      margin-top: -0.285rem;
       .social__link--horizontal:not(:last-of-type) {
-        margin-right: 17px;
+        margin-right: 1.214rem;
       }
     }
 
@@ -64,7 +64,7 @@
 
   &__view {
     margin-left: auto;
-    margin-right: 17px;
+    margin-right: 1.214rem;
     color: $secondary;
 
     &-value {
@@ -79,21 +79,21 @@
 
     &-value {
       font-size: 3.428rem;
-      margin-right: 10px;
+      margin-right: 0.714rem;
     }
 
     &-block {
       display: flex;
       justify-content: space-between;
       padding-top: 2.5rem;
-      padding-bottom: 31px;
+      padding-bottom: 2.214rem;
       border-bottom: 1px dashed #d7d7d7;
     }
   }
 
   &__available {
     display: block;
-    margin-top: 11px;
+    margin-top: 0.785rem;
     color: $secondary;
     font-size: 1.142rem;
 
@@ -121,7 +121,7 @@
   }
 
   &__delivery {
-    padding-top: 27px;
+    padding-top: 1.928rem;
     padding-bottom: 2.142rem;
     border-bottom: 1px dashed #d7d7d7;
 
@@ -154,10 +154,10 @@
 
 
     &-block {
-      padding-top: 26px;
-      padding-left: 30px;
+      padding-top: 1.857rem;
+      padding-left: 2.142rem;
       .product__delivery-text {
-        margin-bottom: 20px;
+        margin-bottom: 1.428rem;
       }
     }
   }
@@ -174,7 +174,7 @@
     font-size: 1.285rem;
     letter-spacing: 0.18px;
     border: 2px solid #202020;
-    padding: 14px 24px;
+    padding: 1rem 1.714rem;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -184,7 +184,7 @@
       color: $light;
       border: 2px solid $primary;
       margin-right: 1.428rem;
-      padding: 14px 25px;
+      padding: 1rem 1.785rem;
     }
 
     &--wholesale {
@@ -192,7 +192,7 @@
     }
 
     &--favorites {
-      padding: 14px 28px;
+      padding: 1rem 2rem;
     }
   }
 
@@ -204,7 +204,7 @@
   }
 
   &__favorites-img {
-    height: 15px;
+    height: 1.071rem;
     margin-right: 1.071rem;
 
     path {
@@ -273,7 +273,7 @@
     text-align: center;
     font-size: 2.571rem;
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 2.928rem;
     font-weight: 300;
 
     &::after {
@@ -292,7 +292,7 @@
 
   &__swiper-container {
     position: relative;
-    padding-bottom: 79px;
+    padding-bottom: 5.642rem;
     padding-left: 0.714rem;
   }
 
@@ -332,7 +332,7 @@
   width: 39.285rem;
   height: 39.285rem;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 2.142rem;
   border: 1px solid #d7d7d7;
 }
 
@@ -349,7 +349,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    padding: 0 19px 0 46px;
+    padding: 0 1.357rem 0 3.285rem;
     align-items: center;
     height: 2.142rem;
     border: 1px solid #d7d7d7;
@@ -396,7 +396,7 @@
   &__delivery {
     color: $dark;
     font-size: 1.142rem;
-    padding-bottom: 21px;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid #d7d7d7;
     position: relative;
     padding-left: 2.142rem;
@@ -549,7 +549,7 @@
   .label__tab {
     order: -1;
     text-align: center;
-    padding: 16px 45px 17px;
+    padding: 1.142rem 3.214rem 1.214rem;
     color: $dark;
     font-size: 1.285rem;
     letter-spacing: 0.18px;
@@ -584,7 +584,7 @@
   &--left {
     color: $dark;
     font-size: 1.285rem;
-    padding: 18px 0 15px;
+    padding: 1.285rem 0 1.071rem;
     letter-spacing: 0.18px;
     border-bottom: 1px solid #e1e1e1;
   }
@@ -615,8 +615,8 @@
     text-decoration: none;
 
     &-wrap {
-      padding-top: 28px;
-      padding-bottom: 25px;
+      padding-top: 2rem;
+      padding-bottom: 1.785rem;
 
       &:not(:last-of-type) {
         border-bottom: 1px solid #d7d7d7;
@@ -626,7 +626,7 @@
 
   &__img {
     margin-right: 2.142rem;
-    margin-top: 5px;
+    margin-top: 0.357rem;
 
     img {
       width: 100%
@@ -653,7 +653,7 @@
 
   &__stars {
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0.428rem;
   }
 
   &__price {
