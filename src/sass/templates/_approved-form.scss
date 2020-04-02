@@ -23,16 +23,24 @@
 
     &::before {
       position: absolute;
-      content: url('../img/index/form-left-line.svg');
-      top: 2rem;
+      content: '';
+      top: 50%;
       left: -23rem;
+      display: block;
+      height: 1px;
+      background: url('../img/index/form-left-line.svg') no-repeat center / contain;
+      width: 23rem;
     }
 
     &::after {
       position: absolute;
-      content: url('../img/index/form-right-line.svg');
-      top: 2rem;
+      content: '';
+      top: 50%;
       right: -23rem;
+      display: block;
+      height: 1px;
+      background: url('../img/index/form-right-line.svg') no-repeat center / contain;
+      width: 23rem;
     }
   }
 
@@ -58,15 +66,15 @@
     padding: 3.357rem 3.428rem 6.285rem;
 
     &:first-of-type {
-      background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center;
+      background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center / contain;
     }
 
     &:nth-of-type(2) {
-      background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center;
+      background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center / contain;
     }
 
     &:last-of-type {
-      background: #f6f6f6 url('../img/index/accessories-bg.jpg') no-repeat center;
+      background: #f6f6f6 url('../img/index/accessories-bg.jpg') no-repeat center / contain;
     }
   }
 }

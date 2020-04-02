@@ -14,11 +14,19 @@
     font-weight: 300;
 
     &::after {
-      content: url('../img/index/right-line.svg');
+      content: '';
+      display: block;
+      height: 1rem;
+      background: url('../img/index/right-line.svg') no-repeat center / contain;
+      width: 33.428rem;
     }
 
     &::before {
-      content: url('../img/index/left-line.svg');
+      content: '';
+      display: block;
+      height: 1rem;
+      background: url('../img/index/left-line.svg') no-repeat center / contain;
+      width: 33.428rem;
     }
   }
 
@@ -154,7 +162,10 @@
   &__img-block {
     position: relative;
     max-height: 22.857rem;
+  }
 
+  &__img {
+    max-width: 22.857rem;
     img {
       width: 100%;
     }

@@ -184,7 +184,9 @@
       <!-- /.header__navbar -->
       <div class="header__navbar header__navbar--main">
         <a href="index.html" class="logo">
-          <img data-src="img/header/logo.png" class="lazyload" src="#" alt="Логотип">
+          <div class="logo__img">
+            <img data-src="img/header/logo.png" class="lazyload" src="#" alt="Логотип">
+          </div>
           <strong class="logo__title"> BMC SALES
             <span class="logo__subtitle">партнерская сеть продаж</span>
             <!-- /.logo__subtitle -->
@@ -717,11 +719,11 @@
         <!-- /.title popular__title -->
         <div class="row popular__row">
 
-
-
           <a href="product.html" class="card">
             <div class="card__img-block">
-              <img data-src="img/card/blouse.jpg" class="lazyload" src="#" alt="Блузка">
+              <div class="card__img">
+                <img data-src="img/card/blouse.jpg" class="lazyload" src="#" alt="Блузка">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -774,7 +776,9 @@
           <!-- /.card -->
           <a href="product.html" class="card">
             <div class="card__img-block">
-              <img data-src="img/card/jacket.jpg" class="lazyload" src="#" alt="Пуховик">
+              <div class="card__img">
+                <img data-src="img/card/jacket.jpg" class="lazyload" src="#" alt="Пуховик">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -826,7 +830,9 @@
           <!-- /.card -->
           <a href="product.html" class="card">
             <div class="card__img-block">
-              <img data-src="img/card/snickers.jpg" class="lazyload" src="#" alt="Кроссовки">
+              <div class="card__img">
+                <img data-src="img/card/snickers.jpg" class="lazyload" src="#" alt="Кроссовки">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -878,7 +884,9 @@
           <!-- /.card -->
           <a href="product.html" class="card">
             <div class="card__img-block">
-              <img data-src="img/card/backpack.jpg" class="lazyload" src="#" alt="Рюкзак">
+              <div class="card__img">
+                <img data-src="img/card/backpack.jpg" class="lazyload" src="#" alt="Рюкзак">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1006,7 +1014,9 @@
           <a href="product.html" class="card">
             <div class="card__img-block">
               <div class="card__flag">35%</div>
-              <img data-src="img/card/coat.jpg" class="lazyload" src="#" alt="Пальто">
+              <div class="card__img">
+                <img data-src="img/card/coat.jpg" class="lazyload" src="#" alt="Пальто">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1060,7 +1070,9 @@
           <a href="product.html" class="card">
             <div class="card__img-block">
               <div class="card__flag">40%</div>
-              <img data-src="img/card/shoes.jpg" class="lazyload" src="#" alt="Туфли">
+              <div class="card__img">
+                <img data-src="img/card/shoes.jpg" class="lazyload" src="#" alt="Туфли">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1114,7 +1126,9 @@
           <a href="product.html" class="card">
             <div class="card__img-block">
               <div class="card__flag">25%</div>
-              <img data-src="img/card/sundress.jpg" class="lazyload" src="#" alt="Сарафан">
+              <div class="card__img">
+                <img data-src="img/card/sundress.jpg" class="lazyload" src="#" alt="Сарафан">
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1168,7 +1182,11 @@
           <a href="product.html" class="card">
             <div class="card__img-block">
               <div class="card__flag">20%</div>
-              <img data-src="img/card/tie.jpg" class="lazyload" src="#" alt="Галстук">
+              <div class="card_img">
+                <div class="card__img">
+                  <img data-src="img/card/tie.jpg" class="lazyload" src="#" alt="Галстук">
+                </div>
+              </div>
               <div class="card__block--hidden">
                 <svg class="card__favorites-img" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1281,67 +1299,84 @@
 
 
 
-  <section class="section services ">
+  <section class="section services">
     <div class="container wow fadeInUp">
       <h2 class="title services__title">Сервисы платформы</h2>
       <div class="swiper-container services__swiper-container">
-        <div class="swiper-wrapper services__swiper-wrapper">
+        <div class="swiper-wrapper services__swiper-wrapper swiper-no-swiping">
           <div class="swiper-slide services__swiper-slide">
             <a href="http://elib.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-1.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-1.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Учись с умом с E-Библиотекой</p>
               <span class="services__link">http://elib.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://estol.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-2.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-2.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Ешь не думая с E-Столовой</p>
               <span class="services__link">http://estol.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://security.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-3.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-3.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Безопасность с BMC СМБР!</p>
               <span class="services__link">http://security.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://exams.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-4.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-4.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Проверь свои знания с Exams</p>
               <span class="services__link">http://exams.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://elib.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-1.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-1.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Учись с умом с E-Библиотекой</p>
               <span class="services__link">http://elib.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://estol.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-2.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-2.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Ешь не думая с E-Столовой</p>
               <span class="services__link">http://estol.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://security.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-3.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-3.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Безопасность с BMC СМБР!</p>
               <span class="services__link">http://security.kdt.kz</span>
             </a>
           </div>
           <div class="swiper-slide services__swiper-slide">
             <a href="http://exams.kdt.kz" target="_blank" class="services__slide">
-              <img data-src="img/services/service-4.jpg" src="#" alt="Сервис" class="services__img lazyload">
+              <div class="services__img">
+                <img data-src="img/services/service-4.jpg" src="#" alt="Сервис" class="lazyload">
+              </div>
               <p class="text services__text">Проверь свои знания с Exams</p>
               <span class="services__link">http://exams.kdt.kz</span>
             </a>
           </div>
+
         </div>
 
         <div class="swiper-button-prev services__swiper-button-prev services__swiper-button-prev">
@@ -1563,7 +1598,9 @@
           <!-- /.footer__col -->
           <div class="col footer__col">
             <a href="index.html" class="logo footer__logo">
-              <img data-src="img/footer/logo-footer.png" class="lazyload" src="#" alt="Логотип">
+              <div class="logo__img">
+                <img data-src="img/footer/logo-footer.png" class="lazyload" src="#" alt="Логотип">
+              </div>
               <strong class="logo__title"> BMC SALES
                 <span class="logo__subtitle">партнерская сеть продаж</span>
                 <!-- /.logo__subtitle -->

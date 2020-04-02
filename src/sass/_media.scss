@@ -3,6 +3,7 @@
     &__title {
       transition: all 0.3s linear;
     }
+
     &__title:hover {
       color: #919191;
     }
@@ -182,11 +183,13 @@
         transition: all 0.3s linear;
       }
     }
+
     &__add-img--small:hover {
       path {
         fill: $primary;
       }
     }
+
     &__add-img:hover {
       path {
         fill: $dark;
@@ -400,11 +403,28 @@
 
   .breadcrumb__link {
     transition: all 0.3s linear;
+
     &:hover {
       color: #919191;
     }
   }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
 
 
-
+@media screen and (max-width: 1010px) {
+  .card__flag {
+    left: 0;
+  }
 }

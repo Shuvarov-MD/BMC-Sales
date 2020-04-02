@@ -14,11 +14,20 @@
     font-weight: 300;
 
     &::after {
-      content: url('../img/index/right-line-small.svg');
+      content: '' ;
+      display: block;
+      height: 1rem;
+      background: url('../img/index/right-line-small.svg') no-repeat center / contain;
+      width: 29.857rem;
+
     }
 
     &::before {
-      content: url('../img/index/left-line-small.svg');
+      content: '';
+      display: block;
+      height: 1rem;
+      background: url('../img/index/left-line-small.svg') no-repeat center / contain;
+      width: 29.857rem;
     }
   }
 

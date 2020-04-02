@@ -2,6 +2,8 @@
   position: relative;
   background-color: $accent;
 
+
+
   &__navbar {
     display: flex;
     align-items: center;
@@ -46,9 +48,21 @@
     text-transform: none;
   }
 
+  &__img {
+    width: 4.285rem;
+    img {
+      width: 100%;
+    }
+  }
+
   &--small {
     margin: 0;
     margin-right: 2.142rem;
+    width: 2.285rem;
+    img {
+      width: 100%;
+
+    }
   }
 }
 
