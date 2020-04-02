@@ -1,7 +1,8 @@
 .categories {
   padding-top: 3.571rem;
   padding-bottom: 3.571rem;
-
+  text-align: center;
+  
   &__title {
     color: $dark;
     display: flex;
@@ -51,16 +52,17 @@
   }
 
   &__button {
-    color: #202020;
+    color: $dark;
     font-family: "DIN Pro - Medium";
     letter-spacing: 0.14px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    text-decoration: none;
     border: 2px solid $dark;
     padding: 1.142rem 2.142rem;
     background-color: transparent;
     margin: auto;
     margin-top: 2.857rem;
+
   }
 
   &__arrow {
