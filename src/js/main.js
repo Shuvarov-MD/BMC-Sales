@@ -28,7 +28,7 @@ $(document).ready(function () {
   });
 
   var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
+    spaceBetween: 30,
     slidesPerView: 5,
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same

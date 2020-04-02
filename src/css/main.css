@@ -1346,7 +1346,7 @@ a:focus, button:focus {
 
 .catalog__section {
   padding-top: 4.285rem;
-  padding-bottom: 3.571rem; }
+  padding-bottom: 1px; }
 
 .catalog__navbar {
   display: -webkit-box;
@@ -1373,13 +1373,15 @@ a:focus, button:focus {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1.428rem; }
+  margin-top: 1.214rem; }
 
 .catalog__col--left {
-  width: 24%; }
+  width: 24%;
+  max-width: 22.714rem; }
 
 .catalog__col--right {
-  width: 73%; }
+  width: 75%;
+  max-width: 72.857rem; }
 
 .catalog__cards {
   display: -webkit-box;
@@ -1392,9 +1394,10 @@ a:focus, button:focus {
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  margin-top: -0.285rem; }
   .catalog__cards .card {
-    margin-top: 5.714rem; }
+    margin-top: 3.642rem; }
     .catalog__cards .card:first-of-type, .catalog__cards .card:nth-of-type(2), .catalog__cards .card:nth-of-type(3) {
       margin-top: 3.571rem; }
 
@@ -1407,7 +1410,7 @@ a:focus, button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.428rem;
+  padding: 1.214rem 1.5rem;
   text-align: left;
   width: 100%;
   -webkit-box-shadow: inset 0 -1px 0 rgba(87, 87, 87, 0.1);
@@ -1423,7 +1426,7 @@ a:focus, button:focus {
     .catalog-col__button--active .catalog-col__button-img path {
       fill: #ffffff; }
   .catalog-col__button:not(:last-of-type) {
-    margin-bottom: 0.714rem; }
+    margin-bottom: 0.928rem; }
   .catalog-col__button-img {
     width: 1.428rem;
     margin-right: 1.785rem; }
@@ -1446,7 +1449,7 @@ a:focus, button:focus {
 .catalog__menu {
   list-style-type: none;
   margin: 0;
-  margin-top: 2.142rem;
+  margin-top: 1.5rem;
   padding: 0; }
   .catalog__menu-link {
     text-decoration: none;
@@ -1523,7 +1526,7 @@ a:focus, button:focus {
   font-size: 1.142rem;
   font-family: "DIN Pro - Light";
   text-align: center;
-  margin-top: 4.285rem; }
+  margin-top: 2.714rem; }
 
 .result__value {
   font-family: "DIN Pro - Bold"; }
@@ -1593,7 +1596,7 @@ a:focus, button:focus {
 
 .product__row {
   margin-top: 4.285rem;
-  margin-bottom: 7.142rem;
+  margin-bottom: 96px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1602,21 +1605,29 @@ a:focus, button:focus {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .product__row:last-of-type {
+    margin-bottom: 50px; }
+
+.product__stars img {
+  height: 17px; }
 
 .product__col--left {
   width: 41%;
   max-width: 39.285rem; }
 
 .product__col--right {
-  width: 57%;
-  max-width: 55.928rem; }
+  width: 59%;
+  max-width: 55.928rem;
+  margin-top: -4px; }
+  .product__col--right .social__link--horizontal:not(:last-of-type) {
+    margin-right: 17px; }
 
 .product__col--tab {
   width: 75%;
   max-width: 72.642rem; }
 
 .product__col--view {
-  width: 23%;
+  width: 24%;
   max-width: 22.857rem; }
 
 .product-name {
@@ -1638,7 +1649,7 @@ a:focus, button:focus {
 
 .product__view {
   margin-left: auto;
-  margin-right: 1.071rem;
+  margin-right: 17px;
   color: #919191; }
   .product__view-value {
     font-family: "DIN Pro - Bold"; }
@@ -1648,7 +1659,8 @@ a:focus, button:focus {
   font-size: 1.714rem;
   margin-top: 0.714rem; }
   .product__price-value {
-    font-size: 3.428rem; }
+    font-size: 3.428rem;
+    margin-right: 10px; }
   .product__price-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1659,12 +1671,12 @@ a:focus, button:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 31px;
     border-bottom: 1px dashed #d7d7d7; }
 
 .product__available {
   display: block;
-  margin-top: 1.428rem;
+  margin-top: 11px;
   color: #919191;
   font-size: 1.142rem; }
   .product__available-value {
@@ -1691,7 +1703,7 @@ a:focus, button:focus {
   margin-right: 2.142rem; }
 
 .product__delivery {
-  padding-top: 2.142rem;
+  padding-top: 27px;
   padding-bottom: 2.142rem;
   border-bottom: 1px dashed #d7d7d7; }
   .product__delivery-text {
@@ -1724,7 +1736,10 @@ a:focus, button:focus {
       width: 100%;
       display: none; }
   .product__delivery-block {
-    padding-top: 2.142rem; }
+    padding-top: 26px;
+    padding-left: 30px; }
+    .product__delivery-block .product__delivery-text {
+      margin-bottom: 20px; }
 
 .product__buttons {
   display: -webkit-box;
@@ -1740,7 +1755,7 @@ a:focus, button:focus {
   font-size: 1.285rem;
   letter-spacing: 0.18px;
   border: 2px solid #202020;
-  padding: 1.285rem 1.928rem;
+  padding: 14px 24px;
   background-color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1754,16 +1769,19 @@ a:focus, button:focus {
     background-color: #f47920;
     color: #ffffff;
     border: 2px solid #f47920;
-    margin-right: 1.428rem; }
+    margin-right: 1.428rem;
+    padding: 14px 25px; }
   .product__button--wholesale {
     margin-left: auto; }
+  .product__button--favorites {
+    padding: 14px 28px; }
 
 .product__bag-img {
-  height: 1.428rem;
+  height: 15px;
   margin-right: 1.071rem; }
 
 .product__favorites-img {
-  height: 1.428rem;
+  height: 15px;
   margin-right: 1.071rem; }
   .product__favorites-img path {
     fill: #202020; }
@@ -1839,7 +1857,10 @@ a:focus, button:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 2.571rem; }
+  font-size: 2.571rem;
+  margin: 0;
+  margin-bottom: 41px;
+  font-weight: 300; }
   .recommended__title::after {
     content: url("../img/product/right-line-small.svg"); }
   .recommended__title::before {
@@ -1851,7 +1872,7 @@ a:focus, button:focus {
 
 .recommended__swiper-container {
   position: relative;
-  padding-bottom: 7.5rem;
+  padding-bottom: 79px;
   padding-left: 0.714rem; }
 
 .recommended__swiper-button-prev, .recommended__swiper-button-next {
@@ -1889,7 +1910,7 @@ a:focus, button:focus {
   width: 39.285rem;
   height: 39.285rem;
   margin: 0;
-  margin-bottom: 0.714rem;
+  margin-bottom: 30px;
   border: 1px solid #d7d7d7; }
 
 .gallery-thumbs {
@@ -1907,12 +1928,11 @@ a:focus, button:focus {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  padding-right: 1.428rem;
+  padding: 0 19px 0 46px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 8.571rem;
   height: 2.142rem;
   border: 1px solid #d7d7d7; }
   .label__color:not(:last-of-type) {
@@ -1937,7 +1957,7 @@ a:focus, button:focus {
 .label__delivery {
   color: #202020;
   font-size: 1.142rem;
-  padding-bottom: 2.142rem;
+  padding-bottom: 21px;
   border-bottom: 1px solid #d7d7d7;
   position: relative;
   padding-left: 2.142rem; }
@@ -2057,7 +2077,7 @@ a:focus, button:focus {
         -ms-flex-order: -1;
             order: -1;
     text-align: center;
-    padding: 1.428rem 2.857rem 1.071rem;
+    padding: 16px 45px 17px;
     color: #202020;
     font-size: 1.285rem;
     letter-spacing: 0.18px; }
@@ -2065,7 +2085,7 @@ a:focus, button:focus {
     width: 100%;
     display: none;
     background-color: #f5f5f5;
-    padding: 2.857rem; }
+    padding: 1.5rem 2.857rem 2rem; }
     .tab__content-text {
       color: #202020;
       font-size: 1.285rem;
@@ -2080,7 +2100,7 @@ a:focus, button:focus {
 .column--left {
   color: #202020;
   font-size: 1.285rem;
-  line-height: 3.428rem;
+  padding: 18px 0 15px;
   letter-spacing: 0.18px;
   border-bottom: 1px solid #e1e1e1; }
 
@@ -2110,13 +2130,14 @@ a:focus, button:focus {
           align-items: start;
   text-decoration: none; }
   .view__card-wrap {
-    padding-top: 2.142rem;
-    padding-bottom: 2.142rem; }
+    padding-top: 28px;
+    padding-bottom: 25px; }
     .view__card-wrap:not(:last-of-type) {
       border-bottom: 1px solid #d7d7d7; }
 
 .view__img {
-  margin-right: 2.142rem; }
+  margin-right: 2.142rem;
+  margin-top: 5px; }
   .view__img img {
     width: 100%; }
 
@@ -2144,7 +2165,7 @@ a:focus, button:focus {
 
 .view__stars {
   margin: 0;
-  margin-bottom: 1.428rem; }
+  margin-bottom: 6px; }
 
 .view__price {
   font-size: 1.714rem; }
