@@ -1,5 +1,5 @@
 .popular {
-  padding-top: 3.571rem;
+  padding-top: 2.928rem;
   padding-bottom: 3.571rem;
   text-align: center;
 
@@ -10,6 +10,8 @@
     align-items: center;
     text-align: center;
     font-size: 2.571rem;
+    margin: 0;
+    font-weight: 300;
 
     &::after {
       content: url('../img/index/right-line.svg');
@@ -22,7 +24,7 @@
 
   &__row {
     margin-top: 2.857rem;
-    margin-bottom: 4.285rem;
+    margin-bottom: 2.357rem;
     display: flex;
     justify-content: space-between;
   }
@@ -33,13 +35,13 @@
     color: $dark;
     font-family: "DIN Pro - Medium";
     letter-spacing: 0.14px;
-    padding: 1.071rem 2.5rem;
+    padding: 0.928rem 2.428rem;
     margin: auto;
     border: 2px solid #202020;
 
     &-img {
       height: 0.785rem;
-      margin-left: 0.857rem;
+      margin-left: 0.342rem;
     }
   }
 }
@@ -56,9 +58,9 @@
     font-size: 1.285rem;
     font-weight: 700;
     line-height: 1.714rem;
-    margin-bottom: 1.285rem;
-    margin-top: 2.142rem;
-    margin-left: 1.235rem;
+    margin-bottom: 1.142rem;
+    margin-top: 1.928rem;
+    margin-left: 1.428rem;
   }
 
   &__category {
@@ -70,7 +72,10 @@
 
   &__stars {
     margin-left: 1.5rem;
-    margin-bottom: 2.142rem;
+    margin-bottom: 1.785rem;
+    img {
+      height: 1.214rem;
+    }
   }
 
   &__footer {
@@ -80,7 +85,7 @@
       height: 1px;
       width: 100%;
       background-color: #d7d7d7;
-      margin-bottom: 2.142rem;
+      margin-bottom: 1.714rem;
     }
   }
 
@@ -93,18 +98,20 @@
   &__price {
     color: $dark;
     font-size: 2.142rem;
-    margin-left: 1.5rem;
+    margin-left: 1.428rem;
     margin-right: 0.5rem;
+    font-weight: 300;
 
     &--old {
       margin-left: 1.5rem;
-      margin-top: 1.285rem;
+      margin-top: 0.642rem;
       display: block;
       color: $secondary;
       font-size: 1.142rem;
     }
 
     &--line-through {
+      font-size: 1.285rem;
       line-height: 1.714rem;
       text-decoration: line-through;
     }
@@ -119,7 +126,7 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
-    margin-right: 1.428rem;
+    margin-right: 1.642rem;
 
     &-img {
       width: 1.714rem;
@@ -131,8 +138,8 @@
 
       &--small {
         position: absolute;
-        right: 1.428rem;
-        top: 3.928rem;
+        right: 1.571rem;
+        top: 4.214rem;
         width: 1.428rem;
         height: 1.428rem;
 
@@ -175,16 +182,15 @@
 
   &__flag {
     position: absolute;
-    top: 1.071rem;
-    left: -0.714rem;
+    top: 1.214rem;
+    left: -0.857rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 5.071rem;
-    height: 3.571rem;
+    height: 3.857rem;
     color: $light;
     font-size: 2.142rem;
-    line-height: 1.714rem;
     letter-spacing: -0.3px;
     z-index: 99;
     background: url('../img/card/card-flag.png') no-repeat center;

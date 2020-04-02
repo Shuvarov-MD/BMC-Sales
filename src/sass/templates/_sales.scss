@@ -1,5 +1,5 @@
 .sales {
-  padding-top: 3.571rem;
+  padding-top: 2.928rem;
   padding-bottom: 7.142rem;
   text-align: center;
 
@@ -10,6 +10,8 @@
     align-items: center;
     text-align: center;
     font-size: 2.571rem;
+    margin: 0;
+    font-weight: 300;
 
     &::after {
       content: url('../img/index/right-line.svg');
@@ -22,7 +24,7 @@
 
   &__row {
     margin-top: 2.857rem;
-    margin-bottom: 4.285rem;
+    margin-bottom: 2.428rem;
     display: flex;
     justify-content: space-between;
   }

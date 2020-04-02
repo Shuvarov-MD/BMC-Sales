@@ -1,8 +1,8 @@
 .categories {
-  padding-top: 3.571rem;
+  padding-top: 3.071rem;
   padding-bottom: 3.571rem;
   text-align: center;
-  
+
   &__title {
     color: $dark;
     display: flex;
@@ -10,6 +10,8 @@
     align-items: center;
     text-align: center;
     font-size: 2.571rem;
+    margin: 0;
+    font-weight: 300;
 
     &::after {
       content: url('../img/index/right-line.svg');
@@ -28,7 +30,7 @@
 
   &__col {
     position: relative;
-    padding: 1.571rem 0;
+    padding: 1.428rem 0.714rem 1.714rem;
     max-width: 22.714rem;
     text-align: center;
     text-decoration: none;
@@ -58,15 +60,15 @@
     display: inline-block;
     text-decoration: none;
     border: 2px solid $dark;
-    padding: 1.142rem 2.142rem;
+    padding: 0.928rem 1.571rem;
     background-color: transparent;
     margin: auto;
-    margin-top: 2.857rem;
+    margin-top: 2.785rem;
 
   }
 
   &__arrow {
-    margin-left: 1rem;
+    margin-left: 0.714rem;
     height: 0.857rem;
   }
 }

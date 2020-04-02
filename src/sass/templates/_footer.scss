@@ -2,8 +2,8 @@
   &-main {
     box-shadow: inset 0 1px 0 rgba(87, 87, 87, 0.05);
     background-color: #f6f6f6;
-    padding-top: 4.285rem;
-    padding-bottom: 4.285rem;
+    padding-top: 3.214rem;
+    padding-bottom: 3.642rem;
   }
 
   &__row {
@@ -16,10 +16,16 @@
 
     &:first-of-type {
       margin-right: 5.357rem;
+      margin-top: 0.714rem;
     }
 
     &:nth-of-type(2) {
-      margin-right: 7.142rem;
+      margin-right: 5.357rem;
+      margin-top: 0.714rem;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 0.214rem;
     }
 
     &:last-of-type {
@@ -34,7 +40,7 @@
     line-height: 1.714rem;
     letter-spacing: 0.18px;
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.571rem;
   }
 
   &__bold {
@@ -50,18 +56,22 @@
   }
 
   &__button {
-    margin-top: 2.142rem;
+    margin-top: 2rem;
     color: $dark;
     font-family: "DIN Pro - Medium";
     letter-spacing: 0.14px;
     background-color: transparent;
     border: 2px solid #202020;
-    padding: 1.142rem 2.357rem;
+    padding: 0.928rem 2.214rem;
 
     &-img {
       height: 0.785rem;
       margin-left: 0.714rem;
     }
+  }
+
+  &__download-links {
+    margin-top: 2rem;
   }
 
   &__menu {
@@ -86,8 +96,8 @@
   }
 
   &__phone {
-    margin-top: 2.142rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.642rem;
     text-decoration: none;
     display: block;
     color: $dark;
@@ -100,15 +110,15 @@
     color: $secondary;
     display: block;
     text-decoration: none;
-    font-size: 0.941rem;
+    font-size: 1.142rem;
     letter-spacing: 0.16px;
     margin-bottom: 5.714rem;
   }
 
   &-copyright {
     background-color: $dark;
-    padding-top: 1.428rem;
-    padding-bottom: 1.428rem;
+    padding-top: 1.642rem;
+    padding-bottom: 1.571rem;
 
     .container {
       display: flex;
@@ -131,4 +141,5 @@
 
 .copyright {
   color: $light;
+  margin: 0;
 }

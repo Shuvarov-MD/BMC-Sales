@@ -34,7 +34,7 @@ a, button {
 
 .button {
   &__arrow-right {
-    margin-left: 1.071rem;
+    margin-left: 0.714rem;
     path {
       transition: all 0.3s linear;
     }
@@ -59,8 +59,8 @@ a, button {
   &__text {
     margin: 0;
     position: absolute;
-    right: 18.357rem;
-    bottom: 3.571rem;
+    right: 18rem;
+    bottom: 3.428rem;
     max-width: 12.857rem;
     color: #919191;
     font-size: 1rem;
@@ -71,7 +71,7 @@ a, button {
       display: block;
       width: 2.142rem;
       height: 1px;
-      margin-bottom: 1.428rem;
+      margin-bottom: 1.142rem;
       background-color: #ccc;
     }
   }
@@ -95,7 +95,7 @@ a, button {
     flex-direction: column;
     position: absolute;
     right: 0;
-    bottom: 3.571rem;
+    bottom: 3.214rem;
     z-index: 50;
   }
   &__link {

@@ -1,5 +1,5 @@
 .services {
-  padding-top: 7.142rem;
+  padding-top: 6.571rem;
   padding-bottom: 7.142rem;
 
   &__title {
@@ -9,6 +9,9 @@
     align-items: center;
     text-align: center;
     font-size: 2.571rem;
+    margin: 0;
+    margin-bottom: 2.928rem;
+    font-weight: 300;
 
     &::after {
       content: url('../img/index/right-line.svg');
@@ -28,6 +31,7 @@
   &__text {
     color: $dark;
     font-size: 1.285rem;
+    margin: 0.785rem 0;
   }
 
   &__link {
@@ -38,7 +42,7 @@
 
   &__swiper-container {
     position: relative;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5.928rem;
   }
 
   &__swiper-button-prev,

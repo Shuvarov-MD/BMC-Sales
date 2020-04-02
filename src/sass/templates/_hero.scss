@@ -18,7 +18,7 @@
     width: 100%;
     height: 100%;
     padding-left: 0.357rem;
-    background: url('../img/index/hero/hero-slider-bg.png') no-repeat center;
+    background: url('../img/index/hero/hero-slider-bg.png') no-repeat center bottom;
   }
 
   &__swiper-button-prev,
@@ -30,8 +30,8 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #cccccc;
-    left: 0;
-    bottom: 9.071rem;
+    left: 0.357rem;
+    bottom: 9.214rem;
     top: auto;
 
     &::after {
@@ -45,7 +45,7 @@
   }
 
   &__swiper-button-next {
-    left: 3.928rem;
+    left: 4.285rem;
   }
 
   &__title {
@@ -56,15 +56,15 @@
     text-transform: uppercase;
     font-family: "DIN Pro - Light";
     letter-spacing: 0.36px;
-    margin-bottom: 2.357rem;
+    margin-bottom: 2.142rem;
 
     &::before {
       content: '';
       display: block;
       height: 1px;
       width: 3.571rem;
-      margin-top: 3.928rem;
-      margin-bottom: 2.857rem;
+      margin-top: 3.785rem;
+      margin-bottom: 2.142rem;
       background-color: #cccccc;
     }
   }
@@ -74,7 +74,7 @@
     color: $light;
     display: block;
     max-width: 12.142rem;
-    padding: 1.142rem 0 1.142rem 2.142rem;
+    padding: 0.785rem 1.428rem 1.142rem 1.928rem;
     border: 2px solid $dark;
     font-size: 1.285rem;
     background-color: $dark;
@@ -87,7 +87,7 @@
       display: block;
       height: 1px;
       width: 3.571rem;
-      margin-top: 4rem;
+      margin-top: 4.142rem;
       background-color: #cccccc;
     }
   }
