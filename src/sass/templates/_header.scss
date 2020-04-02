@@ -106,10 +106,12 @@
   &__img {
     margin-left: 0.5rem;
     height: 0.857rem;
+    width: 0.857rem;
     fill: #d0d0d0;
 
     &--last {
       height: 1.571rem;
+      width: 1.571rem;
       margin-left: 0;
       fill: $secondary;
     }
@@ -127,6 +129,7 @@
 
   &__img {
     height: 0.857rem;
+    width: 0.857rem;
     margin-left: 0.857rem;
     fill: #d0d0d0;
   }
@@ -141,12 +144,14 @@
   &__img {
     fill: $primary;
     height: 1rem;
+    width: 1rem;
   }
 }
 
 .arrow-down {
   margin-left: 0.357rem;
   height: 0.857rem;
+  width: 0.857rem;
 }
 
 .favorites {
@@ -162,6 +167,7 @@
 
   &__img {
     height: 1.5rem;
+    width: 1.5rem;
     fill: $primary;
   }
 
@@ -184,6 +190,7 @@
 
   &__img {
     height: 1.5rem;
+    width: 1.5rem;
     fill: $light;
   }
 

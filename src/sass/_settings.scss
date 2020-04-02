@@ -26,7 +26,8 @@ a, button {
 }
 
 .arrow-right {
-  height: 12px;
+  height: 0.857rem;
+  width: 0.857rem;
   path {
     fill: $light;
   }
@@ -89,6 +90,8 @@ a, button {
 .social {
   &--horizontal {
     display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   &--vertical {
     display: flex;
@@ -105,9 +108,12 @@ a, button {
     &--horizontal:not(:last-of-type) {
       margin-right: 1rem;
     }
+
   }
   &__img {
     width: 1rem;
+    max-height: 1rem;
+    max-width: 1rem;
     height: 1rem;
     fill: #919191;
     path {

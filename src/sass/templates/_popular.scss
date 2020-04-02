@@ -41,6 +41,7 @@
 
     &-img {
       height: 0.785rem;
+      width: 0.785rem;
       margin-left: 0.342rem;
     }
   }
@@ -138,7 +139,7 @@
 
       &--small {
         position: absolute;
-        right: 1.571rem;
+        right: 1.428rem;
         top: 4.214rem;
         width: 1.428rem;
         height: 1.428rem;
@@ -177,6 +178,7 @@
     top: 1.428rem;
     right: 1.428rem;
     width: 1.428rem;
+    height: 1.428rem;
     fill: $light;
   }
 
