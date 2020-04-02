@@ -24,15 +24,15 @@
     &::before {
       position: absolute;
       content: url('../img/index/form-left-line.svg');
-      top: 28%;
-      left: -45%;
+      top: 2rem;
+      left: -23rem;
     }
 
     &::after {
       position: absolute;
       content: url('../img/index/form-right-line.svg');
-      top: 28%;
-      right: -45%;
+      top: 2rem;
+      right: -23rem;
     }
   }
 
