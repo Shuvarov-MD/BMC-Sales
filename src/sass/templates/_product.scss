@@ -1,3 +1,30 @@
+.breadcrumb {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    &:not(:last-of-type)::after {
+      content: '|';
+      margin-right: 1rem;
+      margin-left: 1rem;
+      color: $secondary;
+    }
+  }
+
+  &__link {
+    color: $dark;
+    font-size: 1.142rem;
+    text-decoration: none;
+
+    &--active {
+      color: $secondary;
+    }
+  }
+}
+
+
 .product {
   &__header {
     background-color: transparent;
@@ -230,12 +257,14 @@
         margin-right: 2.142rem;
       }
 
-      &:last-of-type {
+      /*&:last-of-type {
         margin-right: 1.428rem;
         margin-left: auto;
-      }
+      }*/
     }
   }
+
+
 
 
   &__swiper-wrapper {
@@ -724,4 +753,15 @@
   }
 }
 
+.color-inputs {
+  display: flex;
+}
 
+.product__bottom-wrap {
+  margin-left: auto;
+  display: flex;
+}
+
+.card__stars.view__stars {
+  margin-left: 0;
+}

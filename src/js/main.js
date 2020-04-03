@@ -18,8 +18,6 @@ $(document).ready(function () {
       320: {
         slidesPerView: 1,
         spaceBetween: 0,
-        centeredSlides: true,
-        //centeredSlidesBounds: true,
       },
       // when window width is >= 480px
       480: {
@@ -37,68 +35,6 @@ $(document).ready(function () {
       prevEl: '.services__swiper-button-prev',
     },
   });
-
-  var recommendedSwiper = new Swiper('.recommended__swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    freeMode: true,
-    navigation: {
-      nextEl: '.recommended__swiper-button-next',
-      prevEl: '.recommended__swiper-button-prev',
-    },
-  });
-
-  var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 30,
-    slidesPerView: 5,
-    freeMode: true,
-    loopedSlides: 5, //looped slides should be the same
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
-    loopedSlides: 5, //looped slides should be the same
-    thumbs: {
-      swiper: galleryThumbs,
-    },
-  });
-
-
-  //Добавление классов
-  $(".catalog__menu-link").click(function(e) {
-    e.preventDefault();
-    $(".catalog__menu-link").removeClass('catalog__menu-link--active');
-    $(this).addClass('catalog__menu-link--active');
-  });
-
-  $(".catalog-col__button").click(function(e) {
-    e.preventDefault();
-    $(".catalog-col__button").removeClass('catalog-col__button--active');
-    $(this).addClass('catalog-col__button--active');
-  });
-
-  $(".paginations__item").click(function(e) {
-    e.preventDefault();
-    $(".paginations__item").removeClass('paginations__item--active');
-    $(this).addClass('paginations__item--active');
-  });
-
-
-  //Кнопка вперед
-  $('.paginations__next').on('click', function () {
-		if ($('.paginations__item--active').index() == -1) {
-			$('.paginations__item:first-child').addClass('paginations__item--active');
-		} else {
-
-			$('.paginations__item--active').next('.paginations__item').addClass('paginations__item--active');
-			$('.paginations__item--active').prev('.paginations__item').removeClass('paginations__item--active');
-		}
-
-	});
-
-
 
 
   new WOW().init();
@@ -148,12 +84,12 @@ $(document).ready(function () {
   initializeClock('countdown', deadline);
 
 
-//Меню
-$('.navigation__button').on('click', function(e) {
-  e.preventDefault;
-  $(this).toggleClass('navigation__button--active');
-  $('.navigation-wrap').toggleClass('navigation-wrap--active');
-});
+  //Меню
+  $('.navigation__button').on('click', function(e) {
+    e.preventDefault;
+    $(this).toggleClass('navigation__button--active');
+    $('.navigation-wrap').toggleClass('navigation-wrap--active');
+  });
 
 
 });

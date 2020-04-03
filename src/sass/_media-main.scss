@@ -80,14 +80,18 @@
   }
 
 
-  .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     transition: all 0.3s linear;
+
     path {
       transition: all 0.3s linear;
     }
+
     &:hover {
       background-color: $dark;
       border-color: $dark;
+
       path {
         fill: $light;
       }
@@ -216,10 +220,9 @@
   .popular {
     &__button {
       transition: all 0.3s linear;
-    }
-
-    path {
-      transition: all 0.3s linear;
+      path {
+        transition: all 0.3s linear;
+      }
     }
 
     &__button {
@@ -312,102 +315,6 @@
     }
   }
 
-  select {
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .catalog-col__button {
-    transition: all 0.3s linear;
-
-    path {
-      transition: all 0.3s linear;
-    }
-
-    &:hover {
-      cursor: pointer;
-      color: $light;
-      background-color: $primary;
-
-      path {
-        fill: $light;
-      }
-    }
-  }
-
-  .catalog__menu-link {
-    transition: all 0.3s linear;
-
-    &:not(.catalog__menu-link--active):hover {
-      text-decoration: underline;
-      color: $primary;
-    }
-  }
-
-  .paginations__item {
-    transition: all 0.3s linear;
-
-    &:not(.paginations__item--active):hover {
-      color: $primary;
-      border-color: $primary;
-    }
-  }
-
-  .paginations__next {
-    transition: all 0.3s linear;
-
-    &:hover {
-      cursor: pointer;
-      background-color: lighten($primary, 10%);
-      border-color: lighten($primary, 10%);
-    }
-  }
-
-  .swiper-slide-thumb-active {
-    border-color: $primary;
-  }
-
-  .label__pickup-point,
-  .label__color,
-  .label__delivery,
-  .product__slide--thumbs,
-  .label__tab {
-    cursor: pointer;
-  }
-
-  .product__button {
-    transition: all 0.3s linear;
-    cursor: pointer;
-
-    path {
-      transition: all 0.3s linear;
-    }
-
-    &--add {
-      &:hover {
-        background-color: transparent;
-        color: $primary;
-
-        path {
-          fill: $primary;
-        }
-      }
-    }
-
-    &--favorites,
-    &--wholesale {
-      &:hover {
-        background-color: $dark;
-        color: $light;
-
-        path {
-          fill: $light;
-        }
-      }
-    }
-  }
-
   .submenu__link {
     transition: all 0.3s linear;
 
@@ -416,15 +323,10 @@
       border-color: $primary
     }
   }
-
-  .breadcrumb__link {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: #919191;
-    }
-  }
 }
+
+
+
 
 @media screen and (max-width: 1366px) {
   html {
@@ -447,8 +349,6 @@
 
 
 
-
-
 @media screen and (max-width: 992px) {
   html {
     font-size: 14px;
@@ -458,38 +358,46 @@
   .navigation {
     &-wrap {
       display: none;
+
       &--active {
         display: flex;
-        background-color: #c3c1c8;
+        background-color: darken(#f8f6f7,3%);
         z-index: 200;
         position: absolute;
-        top: 15px;
-        right: 29px;
+        top: 20px;
+        right: 35px;
         flex-direction: column;
+
         .arrow-down {
           display: none;
         }
+
         .item__catalog {
           &:hover .submenu {
             display: none;
           }
         }
+
         .navigation {
           margin: 0;
-          padding: 0 10px;
+          padding: 0 40px;
         }
+
         .item--main {
           margin: 0;
           justify-content: center;
           padding: 10px 0;
         }
+
         .item__link--main {
           padding: 0;
         }
+
         .menu--main {
           flex-direction: column;
           margin-bottom: 0;
         }
+
         .favorites {
           flex-direction: row;
           background: none;
@@ -498,10 +406,12 @@
           width: auto;
           height: auto;
           padding: 5px 10px;
+
           &__value {
             margin-left: 5px;
           }
         }
+
         .bag {
           flex-direction: row;
           background: none;
@@ -509,6 +419,7 @@
           width: auto;
           height: auto;
           padding: 5px 10px;
+
           &__value {
             margin-left: 5px;
           }
@@ -531,6 +442,7 @@
       }
     }
   }
+
   .social--vertical {
     display: none;
   }
@@ -538,6 +450,7 @@
   .slide__text {
     display: none;
   }
+
   .hero {
     &__swiper-slide {
       background-size: 60%;
@@ -549,22 +462,28 @@
   .approved-form {
     &__title {
       flex-direction: column;
+
       &--bold {
         margin-right: 0;
         margin-bottom: 0.5rem;
       }
-      &::before, &::after {
+
+      &::before,
+      &::after {
         display: none;
       }
     }
+
     &__row {
       flex-direction: column;
       align-items: center;
     }
+
     &__col {
       width: 100%;
       margin-bottom: 2rem;
     }
+
     &__img {
       display: none;
     }
@@ -573,17 +492,22 @@
   .categories {
     &__title {
       justify-content: center;
-      &::before, &::after {
+
+      &::before,
+      &::after {
         display: none;
       }
     }
+
     &__row {
       flex-wrap: wrap;
       justify-content: center;
     }
+
     &__col {
       width: 50%;
       margin-bottom: 2rem;
+
       &:nth-of-type(2n+1) {
         margin-right: 2rem;
       }
@@ -593,10 +517,13 @@
   .popular {
     &__title {
       justify-content: center;
-      &::before, &::after {
+
+      &::before,
+      &::after {
         display: none;
       }
     }
+
     &__row {
       flex-wrap: wrap;
       justify-content: center;
@@ -610,10 +537,13 @@
   .sales {
     &__title {
       justify-content: center;
-      &::before, &::after {
+
+      &::before,
+      &::after {
         display: none;
       }
     }
+
     &__row {
       flex-wrap: wrap;
       justify-content: center;
@@ -623,6 +553,7 @@
   .card {
 
     margin-bottom: 2.5rem;
+
     &:nth-of-type(2n+1) {
       margin-right: 2rem;
     }
@@ -631,6 +562,7 @@
   .mobile-app {
     background: none;
     background-color: $primary;
+
     &__title {
       font-size: 4.142rem;
     }
@@ -643,7 +575,9 @@
   .services {
     &__title {
       justify-content: center;
-      &::before, &::after {
+
+      &::before,
+      &::after {
         display: none;
       }
     }
@@ -651,6 +585,7 @@
     &__swiper-button-prev {
       left: 0;
     }
+
     &__swiper-button-next {
       left: 3.571rem;
     }
@@ -660,12 +595,17 @@
     &__row {
       justify-content: space-between;
     }
+
     &__col {
       width: 30%;
+
       &:nth-of-type(3) {
         display: none;
       }
-      &:last-of-type, &:nth-of-type(2), &:first-of-type {
+
+      &:last-of-type,
+      &:nth-of-type(2),
+      &:first-of-type {
         margin: 0;
       }
     }
@@ -679,35 +619,42 @@
   }
 
 
-
-
-
   .footer {
     &__row {
       flex-direction: column;
     }
+
     &__col {
       text-align: center;
       margin: auto;
       width: 100%;
       margin: 0;
       max-width: 768px;
-      &:last-of-type, &:nth-of-type(2), &:first-of-type {
+
+      &:last-of-type,
+      &:nth-of-type(2),
+      &:first-of-type {
         margin-bottom: 2rem;
       }
+
       &:last-of-type {
         text-align: center;
       }
     }
+
     &__subtitle {
       margin-bottom: 1rem;
+      max-width: 768px;
     }
+
     &__text {
       margin-bottom: 1.5rem;
     }
+
     &__logo {
       justify-content: center;
     }
+
     &__email {
       margin-bottom: 1.5rem;
     }
@@ -724,20 +671,22 @@
 
 @media screen and (max-width: 608px) {
 
-.hero {
-  &__title {
-    font-size: 2.5rem;
+  .hero {
+    &__title {
+      font-size: 2.5rem;
+    }
   }
-}
 
   .categories {
     &__row {
       flex-direction: column;
       align-items: center;
     }
+
     &__col {
       width: 100%;
       max-width: 318px;
+
       &:nth-of-type(2n+1) {
         margin-right: 0;
       }
@@ -757,6 +706,7 @@
       align-items: center;
     }
   }
+
   .card {
     &:nth-of-type(2n+1) {
       margin-right: 0;
@@ -767,6 +717,7 @@
     &__title {
       font-size: 3.142rem;
     }
+
     &__text {
       font-size: 2rem;
     }
