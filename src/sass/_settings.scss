@@ -16,8 +16,6 @@ a, button {
   }
 }
 
-
-
 .title {
   &__strong {
     font-family: "DIN Pro - Bold";
@@ -47,11 +45,6 @@ a, button {
     width: 1.142rem;
     path {
       fill: #cccccc;
-    }
-    &--active {
-      path {
-        fill: $light;
-      }
     }
   }
 }
@@ -118,6 +111,17 @@ a, button {
     fill: #919191;
     path {
       fill: #919191;
+    }
+  }
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  &:active {
+    background-color: $dark;
+    border-color: $dark;
+    path {
+      fill: $light;
     }
   }
 }

@@ -37,11 +37,6 @@
     &::after {
       display: none;
     }
-
-    &--active {
-      background-color: $dark;
-      border-color: $dark;
-    }
   }
 
   &__swiper-button-next {
@@ -49,7 +44,7 @@
   }
 
   &__title {
-    max-width: 29.357rem;
+    max-width: 30rem;
     color: $dark;
     font-size: 2.571rem;
     line-height: 3.426rem;

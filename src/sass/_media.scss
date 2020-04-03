@@ -76,6 +76,22 @@
         }
       }
     }
+
+  }
+
+
+  .swiper-button-prev, .swiper-button-next {
+    transition: all 0.3s linear;
+    path {
+      transition: all 0.3s linear;
+    }
+    &:hover {
+      background-color: $dark;
+      border-color: $dark;
+      path {
+        fill: $light;
+      }
+    }
   }
 
   .social {
@@ -426,5 +442,367 @@
 @media screen and (max-width: 1010px) {
   .card__flag {
     left: 0;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+
+  .navigation {
+    &-wrap {
+      display: none;
+      &--active {
+        display: flex;
+        background-color: #c3c1c8;
+        z-index: 200;
+        position: absolute;
+        top: 15px;
+        right: 29px;
+        flex-direction: column;
+        .arrow-down {
+          display: none;
+        }
+        .item__catalog {
+          &:hover .submenu {
+            display: none;
+          }
+        }
+        .navigation {
+          margin: 0;
+          padding: 0 10px;
+        }
+        .item--main {
+          margin: 0;
+          justify-content: center;
+          padding: 10px 0;
+        }
+        .item__link--main {
+          padding: 0;
+        }
+        .menu--main {
+          flex-direction: column;
+          margin-bottom: 0;
+        }
+        .favorites {
+          flex-direction: row;
+          background: none;
+          background-color: $light;
+          margin: 0;
+          width: auto;
+          height: auto;
+          padding: 5px 10px;
+          &__value {
+            margin-left: 5px;
+          }
+        }
+        .bag {
+          flex-direction: row;
+          background: none;
+          background-color: $primary;
+          width: auto;
+          height: auto;
+          padding: 5px 10px;
+          &__value {
+            margin-left: 5px;
+          }
+        }
+
+      }
+    }
+
+    &__button {
+      display: block;
+    }
+  }
+
+
+  .header {
+    &__navbar {
+
+      &--small {
+        display: none;
+      }
+    }
+  }
+  .social--vertical {
+    display: none;
+  }
+
+  .slide__text {
+    display: none;
+  }
+  .hero {
+    &__swiper-slide {
+      background-size: 60%;
+      background-position: bottom 0 right 0;
+    }
+  }
+
+
+  .approved-form {
+    &__title {
+      flex-direction: column;
+      &--bold {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+      &::before, &::after {
+        display: none;
+      }
+    }
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__col {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .categories {
+    &__title {
+      justify-content: center;
+      &::before, &::after {
+        display: none;
+      }
+    }
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__col {
+      width: 50%;
+      margin-bottom: 2rem;
+      &:nth-of-type(2n+1) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .popular {
+    &__title {
+      justify-content: center;
+      &::before, &::after {
+        display: none;
+      }
+    }
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .timer {
+    display: none;
+  }
+
+  .sales {
+    &__title {
+      justify-content: center;
+      &::before, &::after {
+        display: none;
+      }
+    }
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .card {
+
+    margin-bottom: 2.5rem;
+    &:nth-of-type(2n+1) {
+      margin-right: 2rem;
+    }
+  }
+
+  .mobile-app {
+    background: none;
+    background-color: $primary;
+    &__title {
+      font-size: 4.142rem;
+    }
+  }
+
+  .card__flag {
+    left: -0.857rem;
+  }
+
+  .services {
+    &__title {
+      justify-content: center;
+      &::before, &::after {
+        display: none;
+      }
+    }
+
+    &__swiper-button-prev {
+      left: 0;
+    }
+    &__swiper-button-next {
+      left: 3.571rem;
+    }
+  }
+
+  .footer {
+    &__row {
+      justify-content: space-between;
+    }
+    &__col {
+      width: 30%;
+      &:nth-of-type(3) {
+        display: none;
+      }
+      &:last-of-type, &:nth-of-type(2), &:first-of-type {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+
+
+
+
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+    &__col {
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      margin: 0;
+      max-width: 768px;
+      &:last-of-type, &:nth-of-type(2), &:first-of-type {
+        margin-bottom: 2rem;
+      }
+      &:last-of-type {
+        text-align: center;
+      }
+    }
+    &__subtitle {
+      margin-bottom: 1rem;
+    }
+    &__text {
+      margin-bottom: 1.5rem;
+    }
+    &__logo {
+      justify-content: center;
+    }
+    &__email {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .pay-card {
+    margin: auto;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 608px) {
+
+.hero {
+  &__title {
+    font-size: 2.5rem;
+  }
+}
+
+  .categories {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__col {
+      width: 100%;
+      max-width: 318px;
+      &:nth-of-type(2n+1) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .popular {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .sales {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card {
+    &:nth-of-type(2n+1) {
+      margin-right: 0;
+    }
+  }
+
+  .mobile-app {
+    &__title {
+      font-size: 3.142rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+  }
+
+
+  .footer {
+    &-copyright {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 479px) {
+  .services {
+    &__slide {
+      max-width: 45rem;
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .approved-form__col {
+    padding-right: 2rem;
   }
 }

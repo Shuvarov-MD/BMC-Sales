@@ -2,11 +2,12 @@
   position: relative;
   background-color: $accent;
 
-
-
   &__navbar {
     display: flex;
     align-items: center;
+    &--main {
+      position: relative;
+    }
 
     &--small {
       height: 3.214rem;
@@ -150,8 +151,11 @@
 }
 
 .navigation {
-  margin-left: auto;
   margin-top: 1.5rem;
+  &-wrap {
+    margin-left: auto;
+    display: flex;
+  }
 }
 
 .search {
@@ -243,5 +247,57 @@
 .item__catalog {
   &:hover>.submenu {
     display: block;
+  }
+}
+
+
+.navigation {
+  &__button {
+    position: relative;
+    margin-left: auto;
+    display: none;
+    width: 30px;
+    height: 30px;
+
+  }
+}
+
+
+
+
+.button__line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 4px;
+  margin-top: -2px;
+  background-color: $dark;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 4px;
+    margin-top: -2px;
+    background-color: $dark;
+    display: block;
+    transition: 0.2s;
+  }
+
+  &::before {
+    transform: translateY(-9px);
+  }
+  &::after {
+    transform: translateY(9px);
+  }
+  .navigation__button--active &::before {
+    transform: rotate(35deg);
+  }
+  .navigation__button--active &::after {
+    transform: rotate(-35deg);
+  }
+  .navigation__button--active & {
+    background-color: transparent;
   }
 }

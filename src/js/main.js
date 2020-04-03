@@ -1,6 +1,7 @@
 $(document).ready(function () {
   //initialize swiper when document ready
   var heroSwiper = new Swiper ('.hero__swiper-container', {
+    loop: true,
     navigation: {
       nextEl: '.hero__swiper-button-next',
       prevEl: '.hero__swiper-button-prev',
@@ -8,9 +9,29 @@ $(document).ready(function () {
   });
 
   var serviceSwiper = new Swiper('.services__swiper-container', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
     freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        //centeredSlidesBounds: true,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    },
     navigation: {
       nextEl: '.services__swiper-button-next',
       prevEl: '.services__swiper-button-prev',
@@ -20,6 +41,7 @@ $(document).ready(function () {
   var recommendedSwiper = new Swiper('.recommended__swiper-container', {
     slidesPerView: 4,
     spaceBetween: 30,
+    loop: true,
     freeMode: true,
     navigation: {
       nextEl: '.recommended__swiper-button-next',
@@ -126,7 +148,12 @@ $(document).ready(function () {
   initializeClock('countdown', deadline);
 
 
-
+//Меню
+$('.navigation__button').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('navigation__button--active');
+  $('.navigation-wrap').toggleClass('navigation-wrap--active');
+});
 
 
 });
