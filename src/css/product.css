@@ -1289,6 +1289,9 @@ template {
 .card__stars.view__stars {
   margin-left: 0; }
 
+.product__bottom-wrap .social {
+  overflow: hidden; }
+
 .services {
   padding-top: 6.571rem;
   padding-bottom: 7.142rem; }

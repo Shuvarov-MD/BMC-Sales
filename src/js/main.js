@@ -90,6 +90,4 @@ $(document).ready(function () {
     $(this).toggleClass('navigation__button--active');
     $('.navigation-wrap').toggleClass('navigation-wrap--active');
   });
-
-
 });
