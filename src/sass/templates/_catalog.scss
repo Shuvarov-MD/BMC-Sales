@@ -267,3 +267,16 @@
     }
   }
 }
+
+.catalog__menu-select {
+  display: none;
+  width: 23rem;
+  padding: 0.857rem 1.428rem;
+  border: 1px solid #d0d0d0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url(../img/arrow-down-select.svg) no-repeat center right 20px;
+}

@@ -3,6 +3,7 @@
   padding-bottom: 3.571rem;
 
   &__title {
+    text-decoration: none;
     position: relative;
     max-width: 51.428rem;
     display: flex;
@@ -66,11 +67,11 @@
     padding: 3.357rem 3.428rem 6.285rem;
 
     &:first-of-type {
-      background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center / contain;
+      background: #f6f6f6 url('../img/index/boys-products-bg.jpg') no-repeat center bottom/ contain;
     }
 
     &:nth-of-type(2) {
-      background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center / contain;
+      background: #f6f6f6 url('../img/index/girls-products-bg.jpg') no-repeat center bottom / contain;
     }
 
     &:last-of-type {

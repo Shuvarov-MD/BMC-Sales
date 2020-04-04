@@ -503,6 +503,7 @@ template {
 
 .favorites {
   width: 4.357rem;
+  text-decoration: none;
   height: 6rem;
   margin-left: 3.571rem;
   margin-right: 0.714rem;
@@ -535,6 +536,7 @@ template {
     letter-spacing: 0.011rem; }
 
 .bag {
+  text-decoration: none;
   width: 4.357rem;
   height: 6rem;
   display: -webkit-box;
@@ -1840,6 +1842,42 @@ a:focus, button:focus {
     .log-in:hover {
       cursor: pointer;
       color: #919191; }
+  .favorites {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .favorites path {
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .favorites .favorites__value {
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .favorites:hover {
+      background: url("../img/header/flag.svg") no-repeat center/cover; }
+      .favorites:hover .favorites__value {
+        color: #ffffff; }
+      .favorites:hover path {
+        fill: #ffffff; }
+  .bag {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .bag path {
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .bag .bag__value {
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .bag:hover {
+      background: url("../img/header/flag-empty.svg") no-repeat center/cover; }
+      .bag:hover .bag__value {
+        color: #f47920; }
+      .bag:hover path {
+        fill: #f47920; }
   .swiper-button-prev,
   .swiper-button-next {
     -webkit-transition: all 0.3s linear;
@@ -2154,7 +2192,9 @@ a:focus, button:focus {
   .footer__email {
     margin-bottom: 1.5rem; }
   .pay-card {
-    margin: auto; } }
+    margin: auto; }
+  .footer__download-link:first-of-type {
+    margin-right: 5px; } }
 
 @media screen and (max-width: 676px) {
   html {
@@ -2200,7 +2240,18 @@ a:focus, button:focus {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .tab .label__tab {
-    padding: 1.142rem 0.5rem 1.214rem; } }
+    padding: 1.142rem 0.5rem 1.214rem; }
+  .services__title {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+  .recommended__title {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: left; } }
 
 @media screen and (max-width: 550px) {
   .product__button--wholesale {
@@ -2255,5 +2306,26 @@ a:focus, button:focus {
   .product__button--favorites {
     margin-top: 1rem;
     margin-right: 1rem; } }
+
+@media screen and (max-width: 325px) {
+  .product__delivery-block {
+    padding-left: 0; }
+  .footer__download-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__download-link:first-of-type {
+    margin-bottom: 5px;
+    margin-right: 0; } }
 
 /*# sourceMappingURL=product.css.map */

@@ -61,6 +61,46 @@
     }
   }
 
+  .favorites {
+    transition: all 0.3s linear;
+    path {
+      transition: all 0.3s linear;
+    }
+    .favorites__value {
+      transition: all 0.3s linear;
+    }
+    &:hover {
+      background: url('../img/header/flag.svg') no-repeat center / cover;
+      .favorites__value {
+        color: $light;
+      }
+
+      path {
+        fill: $light;
+      }
+    }
+  }
+
+  .bag {
+    transition: all 0.3s linear;
+    path {
+      transition: all 0.3s linear;
+    }
+    .bag__value {
+      transition: all 0.3s linear;
+    }
+    &:hover {
+      background: url('../img/header/flag-empty.svg') no-repeat center / cover;
+      .bag__value {
+        color: $primary;
+      }
+
+      path {
+        fill: $primary;
+      }
+    }
+  }
+
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -288,6 +328,10 @@
   html {
     font-size: 10px;
   }
+
+  .catalog__col--right {
+    max-width: 83rem;
+}
 }
 
 
@@ -399,7 +443,10 @@
 
   .card {
     &:nth-of-type(2n+1) {
-      margin-right: 2rem;
+      margin-right: 3rem;
+    }
+    &:last-of-type {
+      display: none;
     }
   }
 
@@ -461,13 +508,26 @@
     font-size: 12px;
   }
 
-
-  .catalog__cards {
-    .card:nth-of-type(n+5) {
-      display: none;
-    }
+  .catalog__row {
+    flex-direction: column;
   }
 
+
+  .catalog__col--left, .catalog__col--right {
+    width: 100%;
+  }
+
+  .catalog-col__button {
+    display: none;
+  }
+
+  .catalog__menu {
+    display: none;
+  }
+
+  .catalog__menu-select {
+    display: block;
+  }
 
   .footer {
     &__row {
@@ -513,6 +573,13 @@
   .pay-card {
     margin: auto;
   }
+
+
+  .footer__download-link {
+    &:first-of-type {
+      margin-right: 5px;
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -526,25 +593,32 @@
 
   .catalog__col {
     &--right {
-      width: 50%;
+      width: 100%;
     }
+  }
+}
 
-    &--left {
-      width: 48%;
+
+@media screen and (max-width: 621px) {
+  .catalog__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    &:nth-of-type(2n+1) {
+      margin-right: 0;
+    }
+    &:nth-of-type(n+6) {
+      display: none;
     }
   }
 }
 
 
 
-
 @media screen and (max-width: 608px) {
 
-  .card {
-    &:nth-of-type(2n+1) {
-      margin-right: 0;
-    }
-  }
+
 
   .mobile-app {
     &__title {
@@ -601,6 +675,14 @@
       max-width: 320px;
     }
   }
+
+  .services__title {
+    justify-content: start;
+  }
+
+
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -617,5 +699,22 @@
   .services__slide {
     max-width: 45rem;
     width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 325px) {
+  .footer__download-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__download-link {
+    &:first-of-type {
+      margin-bottom: 5px;
+      margin-right: 0;
+    }
   }
 }

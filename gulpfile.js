@@ -81,7 +81,7 @@ function buildFonts(cb) {
 }
 
 function buildJS(cb) {
-  src('src/js/catalog.js')
+  src('src/js/product.js')
   .pipe(uglifyjs())
   .pipe(rename({suffix: '.min'}))
   .pipe(dest('dist/js'));
@@ -104,5 +104,5 @@ function buildPHP() {
 
 
 //Экспорт функций
-exports.build = series(buildHTML);
+exports.build = series(minCSS);
 exports.serve = localServer;
