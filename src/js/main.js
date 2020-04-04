@@ -86,8 +86,19 @@ $(document).ready(function () {
 
   //Меню
   $('.navigation__button').on('click', function(e) {
-    e.preventDefault;
+    e.preventDefault();
     $(this).toggleClass('navigation__button--active');
     $('.navigation-wrap').toggleClass('navigation-wrap--active');
   });
+
+
+
+//Кнопка добавить
+  $(".card__add, .card__add-img--small").click(function(e) {
+    e.preventDefault();
+    var $price = $(".bag__value");
+    $price.val(parseInt($price.val()) + 1);
+    $price.change();
+  });
+
 });

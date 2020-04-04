@@ -72,5 +72,12 @@ $(document).ready(function () {
     $('.navigation-wrap').toggleClass('navigation-wrap--active');
   });
 
+  //Кнопка добавить
+  $(".card__add, .card__add-img--small").click(function(e) {
+    e.preventDefault();
+    var $price = $(".bag__value");
+    $price.val(parseInt($price.val()) + 1);
+    $price.change();
+  });
 
 });

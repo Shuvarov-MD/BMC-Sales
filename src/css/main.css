@@ -563,7 +563,12 @@ template {
     color: #ffffff;
     font-size: 1.142rem;
     line-height: 2.142rem;
-    letter-spacing: 0.011rem; }
+    letter-spacing: 0.011rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 16px;
+    text-align: center; }
 
 .submenu {
   position: absolute;
