@@ -519,7 +519,6 @@
 
   .approved-form {
     &__title {
-      flex-direction: column;
 
       &--bold {
         margin-right: 0;
@@ -541,10 +540,11 @@
       width: 100%;
       margin-bottom: 2rem;
     }
+  }
 
-    &__img {
-      display: none;
-    }
+  .title-wrap {
+      display: flex;
+      flex-direction: column;
   }
 
   .categories {

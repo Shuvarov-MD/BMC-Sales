@@ -1929,9 +1929,7 @@ a:focus, button:focus {
         -ms-flex-direction: column;
             flex-direction: column; }
   .catalog__col--left {
-    width: 100%;
-    max-width: 576px;
-    text-align: center; }
+    width: 100%; }
   .catalog__col--right {
     width: 100%; }
   .catalog__menu {

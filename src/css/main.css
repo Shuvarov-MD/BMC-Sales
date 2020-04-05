@@ -729,7 +729,7 @@ template {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 2.428rem 0;
+    padding: 2.428rem 1rem;
     border: 2px solid #202020;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2905,17 +2905,11 @@ a:focus, button:focus {
   .hero__swiper-slide {
     background-size: 58%;
     background-position: bottom 0 right 0; }
-  .approved-form__title {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .approved-form__title--bold {
-      margin-right: 0;
-      margin-bottom: 0.5rem; }
-    .approved-form__title::before, .approved-form__title::after {
-      display: none; }
+  .approved-form__title--bold {
+    margin-right: 0;
+    margin-bottom: 0.5rem; }
+  .approved-form__title::before, .approved-form__title::after {
+    display: none; }
   .approved-form__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2929,8 +2923,16 @@ a:focus, button:focus {
   .approved-form__col {
     width: 100%;
     margin-bottom: 2rem; }
-  .approved-form__img {
-    display: none; }
+  .title-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .categories__title {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

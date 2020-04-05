@@ -715,8 +715,12 @@
 
 @media screen and (max-width: 400px) {
 
-.label__tab:last-of-type {
-  display: none;
+.tab .label__tab {
+  font-size: 1rem;
+}
+
+.column--left, .column--right {
+  font-size: 1rem;
 }
 
   .card {
@@ -742,6 +746,10 @@
   .product__button--favorites {
     margin-top: 1rem;
     margin-right: 1rem;
+  }
+
+  .services__title, .recommended__title {
+    font-size: 2.2rem;
   }
 }
 
