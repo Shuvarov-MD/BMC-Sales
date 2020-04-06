@@ -588,9 +588,45 @@
     }
   }
 
+
+
+
   .timer {
-    display: none;
+    &__title {
+      justify-content: center;
+      &::before, &::after {
+        display: none;
+      }
+    }
+    &__row {
+      justify-content: space-between;
+      padding: 0;
+    }
+    &__value {
+      font-size: 3rem;
+    }
+    &__text {
+      font-size: 1.142rem;
+    }
+    &__img {
+      width: 2.142rem;
+      height: 2.142rem;
+    }
   }
+
+  .outer-wrap {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .inner-wrap {
+    width: 9.142rem;
+    height: 9.142rem;
+  }
+
+
+
+
 
   .sales {
     &__title {
@@ -671,11 +707,18 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
 
+  .timer {
+    &__img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
 
   .footer {
     &__row {
@@ -805,6 +848,12 @@
 
 }
 
+
+@media screen and (max-width: 576px) {
+  .timer {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 479px) {
   .services {

@@ -1046,6 +1046,12 @@ template {
   border: 0.357rem solid #f47920;
   background-color: #f6f6f6; }
 
+.timer__img {
+  width: 4.142rem;
+  height: 4.142rem; }
+  .timer__img img {
+    width: 100%; }
+
 .sales {
   padding-top: 2.928rem;
   padding-bottom: 7.142rem;
@@ -2968,8 +2974,32 @@ a:focus, button:focus {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .timer {
-    display: none; }
+  .timer__title {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .timer__title::before, .timer__title::after {
+      display: none; }
+  .timer__row {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0; }
+  .timer__value {
+    font-size: 3rem; }
+  .timer__text {
+    font-size: 1.142rem; }
+  .timer__img {
+    width: 2.142rem;
+    height: 2.142rem; }
+  .outer-wrap {
+    width: 10rem;
+    height: 10rem; }
+  .inner-wrap {
+    width: 9.142rem;
+    height: 9.142rem; }
   .sales__title {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -3022,6 +3052,9 @@ a:focus, button:focus {
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px; }
+  .timer__img {
+    width: 1.2rem;
+    height: 1.2rem; }
   .footer__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3112,6 +3145,10 @@ a:focus, button:focus {
     text-align: center; }
   .copyright {
     margin-bottom: 1rem; } }
+
+@media screen and (max-width: 576px) {
+  .timer {
+    display: none; } }
 
 @media screen and (max-width: 479px) {
   .services__slide {

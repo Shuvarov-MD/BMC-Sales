@@ -45,7 +45,7 @@ function compileSass() {
 }
 
 function minCSS(cb) {
-  src(['src/css/*.css', '!src/css/*.min.css'])
+  src(['src/css/main.css', '!src/css/*.min.css'])
   .pipe(cssnano())
   .pipe(rename({suffix: '.min'}))
   .pipe(dest('src/css'));
@@ -85,8 +85,8 @@ function buildJS(cb) {
   .pipe(uglifyjs())
   .pipe(rename({suffix: '.min'}))
   .pipe(dest('dist/js'));
- // src('src/js/*.min.js')
- // .pipe(dest('dist/js'));
+  src('src/js/*.min.js')
+  .pipe(dest('dist/js'));
   cb();
 }
 
@@ -104,5 +104,5 @@ function buildPHP() {
 
 
 //Экспорт функций
-exports.build = series(minCSS);
+exports.build = series(clean, buildPHP, buildHTML, buildJS, buildFonts, minCSS, buildCSS, buildImg);
 exports.serve = localServer;
